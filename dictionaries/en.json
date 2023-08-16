@@ -1,0 +1,37 @@
+{
+  "server-component": {
+    "welcome": "Welcome"
+  },
+  "counter": {
+    "increment": "Increment",
+    "decrement": "Decrement"
+  },
+  "HomePage": {
+    "AboutUs": {
+      "title1": "Our Story",
+      "text1": "Text here",
+      "title2": "Our Financial Strength",
+      "text2": "More text financial",
+      "title3": "Our Client Commitment",
+      "text3": "Client text here",
+      "title4": "Our Expertise",
+      "text4": "Expertise text",
+      "heading": "About Us",
+      "button": "Read More"
+    },
+    "News": {
+      "heading": "Latest News",
+      "view_all": "View All News"
+    },
+    "Community": {
+      "title": "We are committed to building brighter futures and serving the communities we live in.",
+      "text": "Here is a bunch of text that is going to get updated later. It's just whatever for now but later it will be something kind of long like this but not sure what it will be yet so just making random words and blah blah blah"
+    }
+  },
+  "Footer": {
+    "title": "Ready to work together?",
+    "text": "Whether you have a project in mind and you're looking for a reliable construction partner, or you're looking to take the next step in your career, we want to hear from you.",
+    "button1": "Build a project with us",
+    "button2": "Build a career with us"
+  }
+}
