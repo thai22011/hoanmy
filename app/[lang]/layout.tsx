@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import { Locale, i18n } from "../../i18n-config";
 import { Kanit } from "next/font/google";
 import "../../styles/globals/globals.scss";
+import Header from "@/components/Header";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -21,6 +22,7 @@ export default function Root({
   return (
     <html lang={params.lang}>
       <body className={kanit.className}>
+        <Header lang={params.lang} />
         {children}
 
         <Footer locale={params.lang} />

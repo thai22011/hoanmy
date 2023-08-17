@@ -1,6 +1,6 @@
 import { useSwipeable } from "react-swipeable";
 import React, { useState } from "react";
-import "./carousel.css";
+import "../styles/AboutUsCarousel.scss";
 
 const NEXT = "next";
 const PREV = "prev";

@@ -1,9 +1,29 @@
+.about {
+  background-color: #f4f1f1;
+  &__heading-mobile {
+    &--focus {
+      color: red;
+    }
+  }
+  &__button {
+    color: white;
+    background-color: #ba1b1d;
+    width: 180px;
+    font-size: 20px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
 .news {
   padding: 12px;
+  background-color: #f4f1f1;
   &__headers-div {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 32px;
   }
   &__heading {
     border-left: 10px solid #ba1b1d;
@@ -28,7 +48,29 @@
     overflow: hidden;
     width: 100%;
   }
+  &__arrows-div {
+    display: flex;
+    gap: 16px;
+  }
+  &__button {
+    height: 100%;
+    width: 40px;
+    border: none;
+    background-color: #e4e1e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+  &__image {
+    // width: 100px;
+    min-height: 200px;
+  }
+
   &__list-item {
+    width: 100%;
     list-style-type: none;
   }
 }

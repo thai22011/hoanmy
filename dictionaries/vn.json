@@ -28,10 +28,34 @@
       "text": "Here is a bunch of text that is going to get updated later. It's just whatever for now but later it will be something kind of long like this but not sure what it will be yet so just making random words and blah blah blah"
     }
   },
+
+  "Header": {
+    "nav1": "Company",
+    "nav2": "Projects",
+    "nav3": "Team",
+    "nav4": "News",
+    "nav5": "Careers",
+    "heading": "Quality construction begins with a quality relationship",
+    "subheading": "Building for today, for tomorrow, for everyone.",
+    "button1": "Build a project with us",
+    "button2": "Build a career with us"
+  },
   "Footer": {
     "title": "Title for VN",
     "text": "Text for VN",
     "button1": "Button 1 text vn",
-    "button2": "button 2 text vn"
+    "button2": "button 2 text vn",
+    "heading1": "Quick Links",
+    "heading2": "Resources",
+    "heading3": "Contact",
+    "qlink1": "Home",
+    "qlink2": "Company",
+    "qlink3": "Projects",
+    "qlink4": "Team",
+    "qlink5": "News",
+    "qlink6": "Careers",
+    "rlink1": "Code of Business Ethics & Conduct",
+    "rlink2": "Privacy Policy",
+    "rlink3": "Legal"
   }
 }

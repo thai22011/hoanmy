@@ -6,7 +6,7 @@ import NewsList from "./NewsList";
 import NewsListItem from "./NewsListItem";
 import { useState } from "react";
 import Image from "next/image";
-import { Carousel } from "./Carousel";
+import { NewsCarousel } from "./NewsCarousel";
 interface Props {
   news: NewsPreview[];
   lang: Locale;
@@ -31,22 +31,22 @@ const NewsSection: React.FC<Props> = ({ news, lang, dictionary }) => {
   // };
   return (
     <section className="news">
-      <div className="news__headers-div">
+      {/* <div className="news__headers-div">
         <h3 className="news__heading">{dictionary.heading}</h3>
         <div className="news__nav-div">
           <Link className="news__link" href={`/${lang}/news`}>
             {dictionary.view_all}
           </Link>
           <div className="news__arrows-div">
-            {/* <button onClick={goBack}>
+            <button onClick={goBack}>
               <Image src={"/arrow.svg"} height={10} width={10} alt="arrow" />
-            </button> */}
-            {/* <button onClick={goForward}>forward</button> */}
+            </button> 
+            <button onClick={goForward}>forward</button>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <Carousel>
+      <NewsCarousel lang={lang} dictionary={dictionary}>
         {news.map((article: NewsPreview) => (
           <NewsListItem
             key={article.title}
@@ -55,7 +55,7 @@ const NewsSection: React.FC<Props> = ({ news, lang, dictionary }) => {
             title={article.title}
           />
         ))}
-      </Carousel>
+      </NewsCarousel>
       {/* <ul className="news__list">
         {news.slice(initial, position).map((article: NewsPreview) => (
           <NewsListItem

@@ -1,6 +1,6 @@
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "../../i18n-config";
-import Counter from "@/components/counter";
+
 import LocaleSwitcher from "@/components/locale-switcher";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,7 +20,6 @@ export default async function IndexPage({
   return (
     <>
       <div>
-        <LocaleSwitcher />
         <p>Current locale: {lang}</p>
         <p>
           This text is rendered on the server:{" "}
@@ -28,13 +27,15 @@ export default async function IndexPage({
         </p>
         <Link href={`/${lang}/about`}>About</Link>
         <Link href={`/${lang}/contact`}>Contact</Link>
-        <Counter dictionary={dictionary.counter} />
       </div>
       <main>
         Home page
         {/* --------ABOUT US SECTION---------- */}
         <section>
-          <AboutUsSection dictionary={dictionary.HomePage.AboutUs} />
+          <AboutUsSection
+            lang={lang}
+            dictionary={dictionary.HomePage.AboutUs}
+          />
           <Image
             height={100}
             layout="responsive"

@@ -9,13 +9,16 @@ const NewsListItem: React.FC<Props> = ({ image, title, description }) => {
   console.log(image);
   return (
     <li className="news__list-item">
-      <Image
-        alt={title}
-        height={100}
-        layout="responsive"
-        width={100}
-        src={image}
-      />
+      <div className="news__image">
+        <Image
+          alt={title}
+          layout="responsive"
+          height={200}
+          width={300}
+          src={image}
+        />
+      </div>
+
       <h3>{title}</h3>
       <p>{description}</p>
     </li>
