@@ -13,15 +13,17 @@ const Footer: React.FC<Props> = async ({ locale }) => {
   return (
     <>
       <section className="ready">
-        <h2 className="ready__title">{dictionary["Footer"].title}</h2>
-        <p className="ready__text">{dictionary["Footer"].text}</p>
-        <div className="ready__links-div">
-          <Link className="ready__link" href="/about">
-            {dictionary["Footer"].button1}
-          </Link>
-          <Link className="ready__link ready__link--modifier" href="/careers">
-            {dictionary["Footer"].button2}
-          </Link>
+        <div className="ready__container">
+          <h2 className="ready__title">{dictionary["Footer"].title}</h2>
+          <p className="ready__text">{dictionary["Footer"].text}</p>
+          <div className="ready__links-div">
+            <Link className="ready__link" href="/about">
+              {dictionary["Footer"].button1}
+            </Link>
+            <Link className="ready__link ready__link--modifier" href="/careers">
+              {dictionary["Footer"].button2}
+            </Link>
+          </div>
         </div>
       </section>
 

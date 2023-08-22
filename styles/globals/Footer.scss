@@ -5,41 +5,59 @@
   background-color: rgba(0, 0, 0, 0.445);
   background-blend-mode: overlay;
   width: 100%;
-  height: 585px;
+
   background-position: center;
   background-size: cover;
-  padding: 80px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  @include breakpoint(768px) {
+  padding: 96px 20px;
+
+  @include breakpoint(1000px) {
+    padding: 160px 100px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @include breakpoint(1000px) {
+      gap: 48px;
+      width: 80%;
+    }
   }
 
   &__title {
-    font-weight: 500;
+    color: #f4f1f1;
+
     font-size: 36px;
-    color: white;
-    line-height: 1.2;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 43.2px */
+    @include breakpoint(1000px) {
+      font-size: 64px;
+    }
   }
 
   &__text {
-    font-weight: 300;
-    color: white;
+    color: #fff;
+
     font-size: 18px;
-    line-height: 1.5;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
   }
   &__links-div {
-    margin-top: 8px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    @include breakpoint(1000px) {
+      flex-direction: row;
+      gap: 48px;
+    }
   }
   &__link {
     color: white;
     background-color: #ba1b1d;
-    width: 250px;
+    width: 280px;
     font-size: 20px;
-    padding: 8px 16px;
+    padding: 14px 18px;
     text-align: center;
     text-decoration: none;
     &--modifier {
@@ -55,16 +73,28 @@
     position: relative;
     display: flex;
     flex-direction: column-reverse;
-    @include breakpoint(750px) {
+    gap: 48px;
+    padding: 150px 20px 72px 20px;
+    @include breakpoint(1000px) {
       flex-direction: row;
+      padding: 80px 100px;
     }
   }
   &__logo-div {
     position: absolute;
-    top: 0;
-    width: 200px;
-    @include breakpoint(750px) {
+    top: 70px;
+    width: 183px;
+    @include breakpoint(1000px) {
       position: relative;
+      top: 0;
+    }
+  }
+  &__copy-div {
+    @include breakpoint(1000px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 40%;
     }
   }
   &__socials {
@@ -73,25 +103,38 @@
   &__links-div {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    @include breakpoint(750px) {
+    gap: 40px;
+    @include breakpoint(1000px) {
       flex-direction: row;
+      justify-content: space-between;
     }
   }
+  &__links {
+    width: 190px;
+  }
   &__heading {
-    padding-bottom: 8px;
     color: #f4f1f1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    padding-bottom: 32px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
   }
   &__ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 18px;
   }
 
   &__link {
     color: #f4f1f1;
     text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
   }
 }

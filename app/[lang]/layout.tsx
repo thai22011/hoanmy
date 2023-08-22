@@ -22,7 +22,6 @@ export default function Root({
   return (
     <html lang={params.lang}>
       <body className={kanit.className}>
-        <Header lang={params.lang} />
         {children}
 
         <Footer locale={params.lang} />

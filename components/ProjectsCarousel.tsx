@@ -1,6 +1,7 @@
+"use client";
 import { useSwipeable } from "react-swipeable";
 import React, { useState } from "react";
-import "../styles/AboutUsCarousel.scss";
+import { Locale } from "@/i18n-config";
 
 const NEXT = "next";
 const PREV = "prev";
@@ -10,9 +11,11 @@ const getOrder = (index: number, pos: number, numItems: number) => {
 };
 interface Props {
   children: any;
+  lang: Locale;
+  dictionary: any;
 }
 
-export const AboutUsSlider: React.FC<Props> = ({ children }) => {
+const ProjectsCarousel: React.FC<Props> = ({ children }) => {
   const numItems = React.Children.count(children);
   const [sliding, setSliding] = useState(false);
   const [direction, setDirection] = useState("");
@@ -57,7 +60,6 @@ export const AboutUsSlider: React.FC<Props> = ({ children }) => {
   });
 
   console.log("handler: ", handlers);
-
   return (
     <div {...handlers} style={{ touchAction: "pan-y" }}>
       <div className="wrapper">
@@ -77,3 +79,5 @@ export const AboutUsSlider: React.FC<Props> = ({ children }) => {
     </div>
   );
 };
+
+export default ProjectsCarousel;

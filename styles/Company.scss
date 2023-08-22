@@ -1,0 +1,136 @@
+@use "./globals/mixins" as *;
+
+.hero-company {
+  background-image: url("/public/crane.jpg");
+  background-color: rgba(0, 0, 0, 0.445);
+  background-blend-mode: overlay;
+  height: 50vh;
+  &__wrapper {
+    padding: 72px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    @include breakpoint(1000px) {
+      padding: 72px 100px;
+    }
+  }
+  &__heading {
+    color: #fff;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 76.8px */
+  }
+  &__red {
+    width: 60px;
+    height: 20px;
+    background-color: #ba1b1d;
+  }
+}
+
+.intro {
+  background: #f4f1f1;
+  padding: 72px 20px;
+  @include breakpoint(1000px) {
+    padding: 72px 100px;
+  }
+  &__wrapper {
+    @include breakpoint(1000px) {
+      width: 70%;
+      color: red;
+    }
+  }
+  &__heading {
+    color: #312c40;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 43.2px */
+    margin-bottom: 48px;
+    @include breakpoint(1000px) {
+      font-size: 40px;
+      margin-bottom: 72px;
+    }
+  }
+  &__text {
+    color: #312c40;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.18px;
+  }
+}
+
+.content {
+  background: #f4f1f1;
+  padding: 72px 20px;
+  @include breakpoint(1000px) {
+    padding: 72px 100px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(1000px) {
+      flex-direction: row;
+      gap: 105px;
+    }
+    &--middle {
+      @include breakpoint(1000px) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  &__inner-div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @include breakpoint(1000px) {
+      gap: 24px;
+    }
+  }
+  &__text-div {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @include breakpoint(1000px) {
+      width: 50%;
+      gap: 72px;
+    }
+  }
+  &__image-div {
+    @include breakpoint(1000px) {
+      width: 50%;
+      margin: auto;
+    }
+  }
+  &__heading {
+    border-left: 10px solid #ba1b1d;
+    padding-left: 22px;
+    color: #251d1b;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 33.6px */
+    @include breakpoint(1000px) {
+      font-size: 40px;
+    }
+  }
+  &__subheading {
+    color: #312c40;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.24px;
+  }
+  &__text {
+    color: #312c40;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.18px;
+  }
+}

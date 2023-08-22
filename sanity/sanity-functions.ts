@@ -8,7 +8,7 @@ import { Locale } from "@/i18n-config"
        apiVersion: '2023-07-07',
     })
 
-export const getProjects = async () => {
+export const getProjectPreviews = async (lang:Locale) => {
 
     return client.fetch(
         groq`*[_type =='project']{
@@ -21,25 +21,11 @@ export const getProjects = async () => {
             content
         }
         
-        `
+        `, {lang}
     )
 }
 
-export const getEnglishNewsPreviews = async () => {
 
-    return client.fetch(
-
-        groq`*[_type == "news" && language == 'en'] | order(_createdAt desc)[0...10]{
-_id,
-title,
-"image":image.asset->url,
-description,
-language
-
-
-        }`
-    )
-}
 
 export const getNewsPreviews = async (lang:Locale) => {
 
