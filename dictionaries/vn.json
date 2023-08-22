@@ -47,6 +47,27 @@
       "text": "Here is a bunch of text that is going to get updated later. It's just whatever for now but later it will be something kind of long like this but not sure what it will be yet so just making random words and blah blah blah"
     }
   },
+  "TeamPage": {
+    "Intro": {
+      "title": "Meet Our People",
+      "heading": "Committed to client service and support.",
+      "text": "ADCO is an Australian, family-owned construction company. ADCO is governed by a board of directors chaired by Judy Brinsmead, with strategic support provided by an advisory board. The national construction business is led by Managing Director Neil Harding, supported by an executive leadership team and our state-based business unit operations."
+    },
+    "Main": {
+      "heading1": "Board of Directors",
+      "heading2": "Our Architects",
+      "heading3": "Our Engineers"
+    }
+  },
+  "ProjectsPage": {
+    "heading": "Our Projects",
+    "class1": "All",
+    "class2": "Education",
+    "class3": "Commercial",
+    "class4": "Military",
+    "class5": "Waterway",
+    "class6": "Government"
+  },
   "CompanyPage": {
     "Intro": {
       "title": "About Us",

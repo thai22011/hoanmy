@@ -3,6 +3,12 @@ export interface NewsPreview {
     title: string,
     description: string
     }
+
+export interface ProjectPreview {
+    image: string,
+    title: string,
+    category: string
+}
     
     export interface Project {
     image: string,

@@ -3,9 +3,14 @@
 .header {
   position: absolute;
   width: 100%;
+  border-bottom: 0.7px solid rgba(135, 132, 132, 0.5);
+
   // &__wrapper {
   //   position: relative;
   // }
+  &--home {
+    border: none;
+  }
 
   &__mobile {
     display: flex;

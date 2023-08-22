@@ -15,7 +15,11 @@ const Header: React.FC<Props> = ({ dictionary, lang }) => {
   const path = usePathname();
 
   return (
-    <header className="header">
+    <header
+      className={
+        path === "/en" || path === "/vn" ? "header header--home" : "header"
+      }
+    >
       <div className="header__mobile">
         <Link
           href={`/${lang}`}
@@ -67,17 +71,38 @@ const Header: React.FC<Props> = ({ dictionary, lang }) => {
               </Link>
             </li>
             <li className="header__nav-li">
-              <Link className="header__nav-link" href={`/${lang}/projects`}>
+              <Link
+                className={
+                  path.includes("/projects")
+                    ? "header__nav-link header__nav-link--focus"
+                    : "header__nav-link"
+                }
+                href={`/${lang}/projects`}
+              >
                 {dictionary.nav2}
               </Link>
             </li>
             <li className="header__nav-li">
-              <Link className="header__nav-link" href={`/${lang}/team`}>
+              <Link
+                className={
+                  path.includes("/team")
+                    ? "header__nav-link header__nav-link--focus"
+                    : "header__nav-link"
+                }
+                href={`/${lang}/team`}
+              >
                 {dictionary.nav3}
               </Link>
             </li>
             <li className="header__nav-li">
-              <Link className="header__nav-link" href={`/${lang}/news`}>
+              <Link
+                className={
+                  path.includes("/news")
+                    ? "header__nav-link header__nav-link--focus"
+                    : "header__nav-link"
+                }
+                href={`/${lang}/news`}
+              >
                 {dictionary.nav4}
               </Link>
             </li>
