@@ -1,124 +1,117 @@
 {
-  "server-component": {
-    "welcome": "Willkommen"
-  },
-  "counter": {
-    "increment": "Zuwachs",
-    "decrement": "Dekrementieren"
-  },
   "HomePage": {
     "Force": {
-      "heading": "A force in Vietnam construction -",
-      "subheading": "guided by family values, trust and putting people first.",
-      "button": "About Us"
+      "heading": "Hoàn Mỹ là giá trị cốt lỗi của chúng tôi",
+      "subheading": "Chúng tôi xem trọng các Nhân – Lễ – Nghĩa – Trí – Tín là các đức tính quan trọng trong việc tuyển dụng và trọng dụng nhân tài.",
+      "button": "Giới Thiệu"
     },
     "Stats": {
-      "heading1": "Established in",
-      "text1": "Over two decades of expertise with a proven track record in the industry",
-      "heading2": "Total Employees",
-      "text2": "Trusted employees with more than 10+ years of service",
-      "heading3": "Employee-owned",
-      "text3": "A stronger sense of ownership and dedication",
-      "heading4": "Current Projects",
-      "text4": "A robus portfolio with projects in the public sector across Vietnam."
+      "heading1": "Thành lập từ",
+      "text1": "Với gần 3 thập kỉ kinh nghiệm trong ngành xây dựng",
+      "heading2": "Tống số nhân sự",
+      "text2": "Nhân sự có năng lực với hơn 15+ năm kinh nghiệm",
+      "heading3": "Quyền sở hữu",
+      "text3": "Là công ty tư nhân",
+      "heading4": "Tổng số công trình đã hoàn thành",
+      "text4": "Với các công trình dân dụng, giao thông, và thủy lợi trải dài các tỉnh miền Nam."
     },
     "Work": {
-      "heading": "Featured Work",
-      "text": "Over the past 30 years, our company has established a strong reputation for delivering high-quality projects in the public sector, Our commitment to quality over quantity has been the driving force behind its growth from undertaking small projects to taking on larger and more complex ventures. "
+      "heading": "Các Công Trình Tiêu Biểu",
+      "text": "Trong vòng 30 năm qua, chúng tôi đặt chữ “Tín” là tiêu chí hàng đầu trong việc thực hiện các dự án chất lượng cao ở nhiều lĩnh vực, tập trung ở các công trình dân dụng, giao thông và thủy lợi. Cam kết của chúng tôi về chất lượng hơn là số lượng đã là động lực cho sự phát triển từ việc thực hiện các dự án từ nhỏ tới lớn. "
     },
     "AboutUs": {
-      "title1": "vn Our Story",
-      "text1": "Text here",
-      "title2": "Our Financial Strength",
-      "text2": "More text financial",
-      "title3": "Our Client Commitment",
-      "text3": "Client text here",
-      "title4": "Our Expertise",
-      "text4": "Expertise text",
-      "heading": "About Us",
-      "button": "Read More"
+      "title1": "Lịch Sử Hình Thành",
+      "text1": "Năm 1994, chỉ với một số vốn ít ỏi và chiếc xe máy, chú Đạt và chú Tài đã đèo nhau đi khắp các tỉnh miền Tây để xây dựng một thương hiệu Việt. Chú Đạt lo phần tài chính-kế toán, chú Tài lo phần kỹ thuật-nhân công. Năm 1996, Công ty TNHH Xây Dựng Hoàn Mỹ chính thức thành lập. Là công ty xây dựng đầu tiên của tỉnh được cấp phép hành nghề, mở ra một chương mới cho thị xã Vĩnh Long (nay đã lên cấp thành phố) cũng như cho các thành viên sáng lập của cty Hoàn Mỹ.",
+      "title2": "Năng Lực Tài Chính",
+      "text2": "Năng lực tài chính là một trong những yếu tố quan trọng nhất khi lựa chọn nhà thầu. Cty TNHH XD Hoàn Mỹ luôn có dòng tiền lưu động ổn định, theo đúng chỉ thị của pháp luật để đảm bảo việc đầu tư vật tư, máy móc, cũng như chi trả chi phí  nhân công đầy đủ, đúng hẹn, giúp hoàn thiện công trình đúng hạn, đúng yêu cầu.",
+      "title3": "Lời Cam Kết Với Khách Hàng",
+      "text3": "Một công trình chất lượng bắt đầu từ mối quan hệ chất lượng. Tại Công ty Xây dựng Hoàn Mỹ, chúng tôi luôn xem trọng việc xây dựng mối quan hệ bền chặt với khách hàng, đối tác, và đặt biệt là anh chị em nhân viên, những người cùng đồng hành quan trọng nhất của công ty. Chúng tôi nhận thấy rằng các dự án diễn ra suôn sẻ hơn và sản phẩm cuối cùng được nâng lên một tầm cao mới khi mọi người được trao đổi rõ ràng và chuyên nghiệp. Có lẽ đó là lý do tại sao nhiều khách hàng lựa chọn làm việc với chúng tôi lâu dài.",
+      "title4": "Lời Cam Kết Về Chất Lượng",
+      "text4": "Khi phát triển thành một nhà thầu lớn, lời cam kết của chúng tôi đối với chất lượng càng thêm quan trọng. Công ty TNHH Xây dựng Hoàn Mỹ ngày nay được xem là một trong những công ty thầu xây dựng lớn nhất nhì ở tỉnh Vĩnh Long. Nhưng điều khiến chúng tôi cảm thấy tự hào không chỉ là danh tiếng  mà còn chính là cam kết đảm về chất lượng, làm đúng bản vẽ, đúng tiến độ và nói không với nạn rút ruột công trình.",
+      "heading": "Giới thiệu",
+      "button": "Xem thêm"
     },
     "News": {
-      "heading": "Latest News",
-      "view_all": "View All News"
+      "heading": "Tin Tức",
+      "view_all": "Xem tất cả tin tức"
     },
     "Community": {
-      "title": "We are committed to building brighter futures and serving the communities we live in.",
-      "text": "Here is a bunch of text that is going to get updated later. It's just whatever for now but later it will be something kind of long like this but not sure what it will be yet so just making random words and blah blah blah"
+      "title": "Vì lợi ích 10 năm trồng cây, Vì lợi ích trăm năm trồng người. - Hồ Chí Minh",
+      "text": "Cty TNHH XD Hoàn Mỹ đầu tư đào tạo nâng cao năng lực cho các nhân sự giỏi và muốn thăng tiến ở công ty. Nhân sự càng có tay nghề tốt thì chất lượng sản phẩm càng cao, rủi ro càng giảm và lợi nhuận càng tăng. Ngoài ra, công ty còn dành một phần lợi nhuận hàng năm làm quỹ cho các hoạt động từ thiên ở địa phương và các khu vực lân cận. "
     }
   },
   "TeamPage": {
     "Intro": {
-      "title": "Meet Our People",
-      "heading": "Committed to client service and support.",
-      "text": "ADCO is an Australian, family-owned construction company. ADCO is governed by a board of directors chaired by Judy Brinsmead, with strategic support provided by an advisory board. The national construction business is led by Managing Director Neil Harding, supported by an executive leadership team and our state-based business unit operations."
+      "title": "Cùng Gặp Các Nhân sự chủ chốt",
+      "heading": "Lời Cam Kết Đến Chất Lượng Và Sản Phẩm",
+      "text": "Cty TNHH XD Hoàn Mỹ là một cộng ty gia đình thuần Việt. Hoàn Mỹ được điều hành bởi một ban quản trị do chú Nguyễn Tấn Đạt làm chủ tịch và chú Nguyễn Tấn Tài làm giám đốc, cùng với sự hỗ trợ của ban cố vấn và các kĩ sư trưởng tại từng công trình."
     },
     "Main": {
-      "heading1": "Board of Directors",
-      "heading2": "Our Architects",
-      "heading3": "Our Engineers"
+      "heading1": "Hội Đồng Quản Trị",
+      "heading2": "Kế Toán",
+      "heading3": "Kĩ Sư"
     }
   },
   "ProjectsPage": {
-    "heading": "Our Projects",
-    "class1": "All",
-    "class2": "Education",
-    "class3": "Commercial",
-    "class4": "Military",
-    "class5": "Waterway",
-    "class6": "Government"
+    "heading": "Các Công Trình Tiêu Biểu",
+    "class1": "Tất Cả",
+    "class2": "Giáo Dục",
+    "class3": "Dân dụng",
+    "class4": "Quốc phòng",
+    "class5": "Thủy Lợi",
+    "class6": "Chính Phủ"
+  },
+  "NewsPage": {
+    "client": "Khách Hàng",
+    "market": "Thị Trường",
+    "completion": "Hoàn Thành",
+    "budget": "Kinh Phí"
   },
   "CompanyPage": {
     "Intro": {
-      "title": "About Us",
-      "heading": "A force in Vietnam construction – guided by family values, trust and putting people first.",
-      "text": "The HOÀN MỸ means ‘PERFECT’ in Vietnamese. In the years since then, we’ve grown to be a multi-billion-dollar construction business guided by an unwavering commitment to quality, our clients, and our people. These foundations have seen us become one of the top private companies in Vietnam with a blue-chip client list and an award-winning portfolio of almost 4,000 successfully completed buildings from early work packages to $300+ million projects."
+      "title": "Câu Chuyện Của Chúng Tôi",
+      "heading": "Hoàn Mỹ là giá trị cốt lỗi của chúng tôi",
+      "text": "Năm 1994, chỉ với một số vốn ít ỏi và chiếc xe máy, chú Đạt và chú Tài đã đèo nhau đi khắp các tỉnh miền Tây để xây dựng một thương hiệu Việt. Chú Đạt lo phần tài chính-kế toán, chú Tài lo phần kỹ thuật-nhân công. Năm 1996, Công ty TNHH Xây Dựng Hoàn Mỹ chính thức thành lập. Là công ty xây dựng đầu tiên của tỉnh được cấp phép hành nghề, mở ra một chương mới cho thị xã Vĩnh Long (nay đã lên cấp thành phố) cũng như cho các thành viên sáng lập của cty Hoàn Mỹ."
     },
     "Section1": {
-      "heading": "Our Financial Strength",
-      "subheading": "Financial security is one of the most critical elements to consider when appointing a construction partner.",
-      "text1": "HOAN MY CONSTRUCTION provides financial surety for our clients and their financiers. We maintain a policy of profit reinvestment and working capital management to ensure our balance sheet remains commensurate with the size of our business. HOAN MY CONSTRUCTION exceeds the financial requirements for licensing in each state and territory, for private and government projects.",
-      "text2": " We have strong cash and liquid asset reserves and a blue-chip client base, which translates into consistent cash flow and profitability. Our audited financial statements are available on request."
+      "heading": "Năng Lực Tài Chính",
+      "subheading": "Tiềm lực tài chính mạnh là yếu tố quan trọng của nhà thầu có năng lực.",
+      "text1": "Năng lực tài chính là một trong những yếu tố quan trọng nhất khi lựa chọn nhà thầu. Cty TNHH XD Hoàn Mỹ luôn có dòng tiền lưu động ổn định, theo đúng chỉ thị của pháp luật để đảm bảo việc đầu tư vật tư, máy móc, cũng như chi trả chi phí  nhân công đầy đủ, đúng hẹn, giúp hoàn thiện công trình đúng hạn, đúng yêu cầu."
     },
     "Section2": {
-      "heading": "Our Client Commitment",
-      "subheading": "Quality construction begins with a quality relationship.",
-      "text": "Quality construction is more than materials and craftsmanship. It stems from the quality of the relationship between client and contractor. At HOAN MY CONSTRUCTION, we're mindful of fostering a family-like atmosphere. We find projects come together much easier and the finished product is far superior when people collaborate and freely share ideas. We also think you try just that little bit harder to please your clients when they seem like family to you. Maybe that's why so many work with us again and again."
+      "heading": "Lời Cam Kết Với Khách Hàng",
+      "subheading": "Một công trình chất lượng bắt đầu từ mối quan hệ chất lượng.",
+      "text": "Tại Công ty Xây dựng Hoàn Mỹ, chúng tôi luôn xem trọng việc xây dựng mối quan hệ bền chặt với khách hàng, đối tác, và đặt biệt là anh chị em nhân viên, những người cùng đồng hành quan trọng nhất của công ty. Chúng tôi nhận thấy rằng các dự án diễn ra suôn sẻ hơn và sản phẩm cuối cùng được nâng lên một tầm cao mới khi mọi người được trao đổi rõ ràng và chuyên nghiệp. Có lẽ đó là lý do tại sao nhiều khách hàng lựa chọn làm việc với chúng tôi lâu dài."
     },
     "Section3": {
-      "heading": "Our Expertise",
-      "subheading": "A higher level of satisfaction inside and out.",
-      "text": "As you might expect of a company that began as a high-end interiors contractor, we pay strict attention to the smallest details. As we've grown and evolved into a general contractor, our commitment to exceptional quality has never wavered. Maman Corp. today ranks as one of the most highly-regarded construction management firms in the healthcare, retail, and commercial and industrial markets. And while we're proud of our reputation for quality work, we're prouder still that first and foremost in everything we do is an unwavering commitment to client satisfaction."
+      "heading": "Lời Cam Kết Về Chất Lượng",
+      "subheading": "Không ngừng nâng cao chất lượng sản phẩm và dịch vụ.",
+      "text": "Khi phát triển thành một nhà thầu lớn, lời cam kết của chúng tôi đối với chất lượng càng thêm quan trọng. Công ty TNHH Xây dựng Hoàn Mỹ ngày nay được xem là một trong những công ty thầu xây dựng lớn nhất nhì ở tỉnh Vĩnh Long. Nhưng điều khiến chúng tôi cảm thấy tự hào không chỉ là danh tiếng  mà còn chính là cam kết đảm về chất lượng, làm đúng bản vẽ, đúng tiến độ và nói không với nạn rút ruột công trình."
     }
   },
-
   "Header": {
-    "nav1": "Company",
-    "nav2": "Projects",
-    "nav3": "Team",
-    "nav4": "News",
-    "nav5": "Careers",
-    "heading": "Quality construction begins with a quality relationship",
-    "subheading": "Building for today, for tomorrow, for everyone.",
-    "button1": "Build a project with us",
-    "button2": "Build a career with us"
+    "nav1": "Giới Thiệu",
+    "nav2": "Công Trình",
+    "nav3": "Nhân lực",
+    "nav4": "Tin  Tức",
+    "nav5": "Tuyển Dụng",
+    "heading": "Một công trình chất lượng bắt đầu từ mối quan hệ chất lượng",
+    "subheading": "Xây đựng cho hiện tại, cho tương lại, và cho tất cả mọi người.",
+    "button1": "Bắt đầu công trình mới với chúng tôi",
+    "button2": "Bắt đầu sự nghiệp mới với chúng tôi"
   },
   "Footer": {
-    "title": "Title for VN",
-    "text": "Text for VN",
-    "button1": "Button 1 text vn",
-    "button2": "button 2 text vn",
-    "heading1": "Quick Links",
-    "heading2": "Resources",
-    "heading3": "Contact",
-    "qlink1": "Home",
-    "qlink2": "Company",
-    "qlink3": "Projects",
-    "qlink4": "Team",
-    "qlink5": "News",
-    "qlink6": "Careers",
-    "rlink1": "Code of Business Ethics & Conduct",
-    "rlink2": "Privacy Policy",
-    "rlink3": "Legal"
+    "title": "Muốn làm việc cùng nhau?",
+    "text": "Anh chị có một dự án muốn thực hiên hay đang tìm kiếm một đối tác xây dựng đáng tin cậy, hay muốn tiến bước tiếp theo trong sự nghiệp của mình, hãy liên lạc với chúng tôi bằng nút bên dưới",
+    "button1": "Bắt đầu công trình mới với chúng tôi",
+    "button2": "Bắt đầu sự nghiệp mới với chúng tôi",
+    "heading1": "Liên kết",
+    "heading2": "Liên lạc",
+    "qlink1": "Trang Chủ",
+    "qlink2": "Giới Thiệu",
+    "qlink3": "Công Trình",
+    "qlink4": "Nhân lực",
+    "qlink5": "Tin  Tức",
+    "qlink6": "Tuyển Dụng"
   }
 }

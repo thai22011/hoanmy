@@ -1,11 +1,4 @@
 {
-  "server-component": {
-    "welcome": "Welcome"
-  },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
-  },
   "HomePage": {
     "Force": {
       "heading": "A force in Vietnam construction -",
@@ -28,13 +21,13 @@
     },
     "AboutUs": {
       "title1": "Our Story",
-      "text1": "Text here",
+      "text1": "HOÀN MỸ means ‘PERFECT’ in Vietnamese. In the years since then, we’ve grown to be a multi-billion-dollar construction business guided by an unwavering commitment to quality, our clients, and our people. These foundations have seen us become one of the top private companies in Vietnam with a blue-chip client list and an award-winning portfolio of almost 150+ successfully completed buildings from early work packages to $5+ million projects.",
       "title2": "Our Financial Strength",
-      "text2": "More text financial",
+      "text2": "HOAN MY CONSTRUCTION provides financial surety for our clients and their financiers. We maintain a policy of profit reinvestment and working capital management to ensure our balance sheet remains commensurate with the size of our business. We have strong cash and liquid asset reserves and a blue-chip client base, which translates into consistent cash flow and profitability. Our audited financial statements are available on request.",
       "title3": "Our Client Commitment",
-      "text3": "Client text here",
+      "text3": "Quality construction is more than materials and craftsmanship. It stems from the quality of the relationship between client and contractor. At HOAN MY CONSTRUCTION, we're mindful of fostering a family-like atmosphere. We find projects come together much easier and the finished product is far superior when people collaborate and freely share ideas. We also think you try just that little bit harder to please your clients when they seem like family to you. Maybe that's why so many work with us again and again.",
       "title4": "Our Expertise",
-      "text4": "Expertise text",
+      "text4": "As we've grown and evolved into a general contractor, our commitment to exceptional quality has never wavered. Hoan My Construction Ltd. today ranks as one of the most highly-regarded construction management firms in the public, government and industrial markets. And while we're proud of our reputation for quality work, we're prouder still that first and foremost in everything we do is an unwavering commitment to client satisfaction.",
       "heading": "About Us",
       "button": "Read More"
     },
@@ -67,6 +60,12 @@
     "class4": "Military",
     "class5": "Waterway",
     "class6": "Government"
+  },
+  "NewsPage": {
+    "client": "Client",
+    "market": "Market",
+    "completion": "Completion",
+    "budget": "Budget"
   },
   "CompanyPage": {
     "Intro": {

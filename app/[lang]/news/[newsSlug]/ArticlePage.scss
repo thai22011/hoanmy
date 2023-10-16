@@ -1,0 +1,64 @@
+@use "../../../../styles/globals/mixins" as *;
+
+.article {
+  &__image {
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__title {
+    color: #ba1b1d;
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 43.2px */
+    @include breakpoint(1000px) {
+      font-size: 64px;
+    }
+  }
+
+  &__date {
+    color: #251d1b;
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 33.6px */
+  }
+  &__content {
+    padding: 72px 20px;
+    @include breakpoint(1000px) {
+      padding: 144px 100px;
+    }
+  }
+  &__text {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--font, #251d1b);
+    width: 100%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.18px;
+    @include breakpoint(1000px) {
+      margin-top: 106px;
+      width: 75%;
+    }
+  }
+  &__button-div {
+    margin-top: 40px;
+  }
+  &__button {
+    color: white;
+    background-color: #ba1b1d;
+    width: 250px;
+    font-size: 20px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+}

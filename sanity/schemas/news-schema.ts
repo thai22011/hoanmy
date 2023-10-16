@@ -48,6 +48,11 @@ const news = {
             type: 'url'
         },
         {
+            name: 'date',
+            title: 'date',
+            type: 'date'
+        },
+        {
             name: 'description',
             title: 'Description',
             type: 'string'

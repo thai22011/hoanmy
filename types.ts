@@ -2,12 +2,14 @@ export interface NewsPreview {
     image: string,
     title: string,
     description: string
+    slug: string
     }
 
 export interface ProjectPreview {
     image: string,
-    title: string,
+    name: string,
     category: string
+    slug: string
 }
     
     export interface Project {

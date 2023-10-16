@@ -42,6 +42,7 @@
     display: flex;
     list-style-type: none;
     gap: 32px;
+    z-index: 50;
   }
   &__nav-link {
     color: white;

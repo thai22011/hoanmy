@@ -24,7 +24,11 @@ const ProjectsPage = async ({
             <div className="hero-projects__red" />
           </div>
         </section>
-        <ProjectsSection projects={projects} />
+        <ProjectsSection
+          lang={lang}
+          dictionary={dictionary.ProjectsPage}
+          projects={projects}
+        />
       </main>
     </>
   );
