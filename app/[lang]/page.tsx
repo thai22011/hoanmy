@@ -9,6 +9,7 @@ import NewsSection from "@/components/NewsSection";
 import { getNewsPreviews, getProjectPreviews } from "@/sanity/sanity-functions";
 import ProjectsCarousel from "@/components/ProjectsCarousel";
 import AboutUsSection from "@/components/AboutUsSection";
+import { ProjectPreview, NewsPreview } from "@/types";
 export default async function IndexPage({
   params: { lang },
 }: {
@@ -118,28 +119,74 @@ export default async function IndexPage({
               </h2>
               <p className="work__text">{dictionary["HomePage"].Work.text}</p>
             </div>
-            <ProjectsCarousel lang={lang} dictionary={dictionary.HomePage.Work}>
-              <p>Hello</p>
-            </ProjectsCarousel>
+            <div>
+              {projects.map((project: ProjectPreview) => (
+                <Link
+                  className="work__link"
+                  href={`/${lang}/projects/${project.slug}`}
+                >
+                  {project.image && (
+                    <Image
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      alt={project.name}
+                      src={project.image}
+                    />
+                  )}
+                  <h3 className="work__project-name">{project.name}</h3>
+                </Link>
+              ))}
+            </div>
+            <div className="work__button-div">
+              <Link className="work__button" href={`/${lang}/company`}>
+                {dictionary["HomePage"].Work.button}
+              </Link>
+            </div>
           </div>
         </section>
         {/* --------ABOUT US SECTION---------- */}
 
         <AboutUsSection lang={lang} dictionary={dictionary.HomePage.AboutUs} />
-        <Image
-          height={100}
-          layout="responsive"
-          alt="Construction"
-          width={100}
-          src={"/about1.jpg"}
-        />
+        <div className="about-photo">
+          <Image
+            height={100}
+            layout="responsive"
+            alt="Construction"
+            width={100}
+            src={"/about1.jpg"}
+          />
+        </div>
 
         {/* -------NEWS SECTION---------- */}
-        <NewsSection
+        {/* <NewsSection
           news={news}
           lang={lang}
           dictionary={dictionary.HomePage.News}
-        />
+        /> */}
+
+        <section className="work">
+          <h2 className="work__heading">{dictionary.HomePage.News.heading}</h2>
+          {news.map((article: NewsPreview) => (
+            <Link className="work__link" href={`/${lang}/news/${article.slug}`}>
+              {article.image && (
+                <Image
+                  width={80}
+                  height={80}
+                  layout="responsive"
+                  alt={article.title}
+                  src={article.image}
+                />
+              )}
+              <h3 className="work__project-name">{article.title}</h3>
+            </Link>
+          ))}
+          <div className="work__button-div">
+            <Link className="work__button" href={`/${lang}/company`}>
+              {dictionary["HomePage"].News.view_all}
+            </Link>
+          </div>
+        </section>
         {/* ------COMMUNITY SECTION----- */}
         <section className="community">
           <div className="community__wrapper">

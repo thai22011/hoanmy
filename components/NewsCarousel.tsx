@@ -65,7 +65,7 @@ export const NewsCarousel: React.FC<Props> = ({
     touchEventOptions: { passive: true },
   });
 
-  console.log("handler: ", handlers);
+  // console.log("handler: ", handlers);
 
   return (
     <>

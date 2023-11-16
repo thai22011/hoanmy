@@ -8,8 +8,9 @@ export interface NewsPreview {
 export interface ProjectPreview {
     image: string,
     name: string,
-    category: string
+    market: string
     slug: string
+    client: string
 }
     
     export interface Project {

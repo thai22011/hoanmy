@@ -206,13 +206,31 @@
   }
 }
 
+.about-photo {
+  max-height: 250px;
+  @include breakpoint(1000px) {
+    max-height: 400px;
+  }
+
+  overflow: hidden;
+}
+//WORK----------------------------
 .work {
   padding: 72px 16px;
+  @include breakpoint(1000px) {
+    padding: 80px 100px;
+  }
 
   &__text-content {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    margin-bottom: 48px;
+    @include breakpoint(1000px) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 70px;
+    }
   }
 
   &__heading {
@@ -223,6 +241,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 120%; /* 33.6px */
+    @include breakpoint(1000px) {
+      font-size: 40px;
+      max-height: 50px;
+    }
   }
   &__text {
     color: #3c3634;
@@ -231,9 +253,34 @@
     font-style: normal;
     font-weight: 300;
     line-height: 150%; /* 24px */
+    @include breakpoint(1000px) {
+      width: 60%;
+      font-size: 18px;
+      justify-self: flex-end;
+    }
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__project-name {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+  }
+  &__button-div {
+    margin-top: 48px;
+  }
+  &__button {
+    color: white;
+    background-color: #ba1b1d;
+    width: 180px;
+    font-size: 20px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
   }
 }
-
+//ABOUT--------------------------
 .about {
   background-color: #f4f1f1;
   padding: 72px 20px;

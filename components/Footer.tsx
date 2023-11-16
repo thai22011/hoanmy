@@ -3,6 +3,7 @@ import { Locale } from "@/i18n-config";
 import "@/styles/globals/Footer.scss";
 import Link from "next/link";
 import Image from "next/image";
+
 interface Props {
   locale: Locale;
 }
@@ -27,7 +28,7 @@ const Footer: React.FC<Props> = async ({ locale }) => {
         </div>
       </section>
 
-      <footer className="footer">
+      <footer className={` footer`}>
         <div className="footer__wrapper">
           <div className="footer__copy-div">
             <div className="footer__logo-div">
@@ -41,13 +42,35 @@ const Footer: React.FC<Props> = async ({ locale }) => {
             </div>
             <div>
               <div className="footer__socials">
-                <p>F</p>
-                <p>T</p>
-                <p>L</p>
+                <Image
+                  alt="facebook"
+                  height={40}
+                  width={40}
+                  src={"/facebook.svg"}
+                />
+                <Image
+                  alt="tiktok"
+                  height={40}
+                  width={40}
+                  src={"/tiktok.svg"}
+                />
+                <Image
+                  alt="instagram"
+                  height={40}
+                  width={40}
+                  src={"/instagram.svg"}
+                />
+                <Image
+                  alt="linkedin"
+                  height={40}
+                  width={40}
+                  src={"/linkedin.svg"}
+                />
               </div>
-              <p>
-                Copyright <span>&copy;</span> 2023 HoanMyCo
+              <p className="footer__copy-text">
+                Copyright <span>&copy;</span> 2023 Hoan My Construction Ltd.
               </p>
+              <p className="footer__copy-text">All rights reserved</p>
             </div>
           </div>
           <div className="footer__links-div">
@@ -88,11 +111,11 @@ const Footer: React.FC<Props> = async ({ locale }) => {
                 </li>
               </ul>
             </div>
-            <div className="footer__links">
-              <h4 className="footer__heading">
+            {/* <div className="footer__links"> */}
+            {/* <h4 className="footer__heading">
                 {dictionary["Footer"].heading2}
-              </h4>
-              <ul className="footer__ul">
+              </h4> */}
+            {/* <ul className="footer__ul">
                 <li className="footer__li">
                   <Link className="footer__link" href={`/${locale}/`}>
                     {dictionary["Footer"].rlink1}
@@ -108,8 +131,8 @@ const Footer: React.FC<Props> = async ({ locale }) => {
                     {dictionary["Footer"].rlink3}
                   </Link>
                 </li>
-              </ul>
-            </div>
+              </ul> */}
+            {/* </div> */}
             <div className="footer__links">
               <h4 className="footer__heading">
                 {dictionary["Footer"].heading3}

@@ -18,7 +18,10 @@ export const getProjectPreviews = async (lang:Locale) => {
             "slug": slug.current,
             "image":image.asset->url,
             url,
-            content
+            content,
+            client,
+            market
+
         }
         
         `, {lang}

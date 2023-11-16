@@ -28,7 +28,7 @@ const AboutUsSection: React.FC<Props> = ({ lang, dictionary }) => {
   ];
 
   const [focusText, setFocusText] = useState(content[0]);
-  console.log(focusText);
+  // console.log(focusText);
   return (
     <section className="about">
       <div className="about__wrapper">

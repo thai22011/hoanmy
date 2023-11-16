@@ -13,6 +13,18 @@ const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
   const [showedProjects, setShowedProjects] = useState(projects);
   const [selected, setSelected] = useState("all");
   console.log(projects);
+
+  const handleChange = (category: string) => {
+    setSelected(category);
+
+    if (category === "all") {
+      setShowedProjects(projects);
+    } else {
+      setShowedProjects(
+        projects.filter((project) => project.market === category)
+      );
+    }
+  };
   return (
     <section className="projects">
       <div className="projects__wrapper">
@@ -20,6 +32,7 @@ const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
           {/* MOBILE MENU */}
           <div className="projects__mobile-menu">
             <p
+              onClick={() => handleChange("all")}
               className={
                 selected === "all"
                   ? "projects__type--selected projects__type"
@@ -29,6 +42,7 @@ const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
               {dictionary.class1}
             </p>
             <p
+              onClick={() => handleChange("education")}
               className={
                 selected === "education"
                   ? "projects__type--selected projects__type"
@@ -38,6 +52,7 @@ const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
               {dictionary.class2}
             </p>
             <p
+              onClick={() => handleChange("commercial")}
               className={
                 selected === "commercial"
                   ? "projects__type--selected projects__type"
@@ -47,6 +62,7 @@ const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
               {dictionary.class3}
             </p>
             <p
+              onClick={() => handleChange("military")}
               className={
                 selected === "military"
                   ? "projects__type--selected projects__type"
@@ -56,6 +72,7 @@ const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
               {dictionary.class4}
             </p>
             <p
+              onClick={() => handleChange("government")}
               className={
                 selected === "government"
                   ? "projects__type--selected projects__type"
@@ -65,6 +82,7 @@ const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
               {dictionary.class6}
             </p>
             <p
+              onClick={() => handleChange("waterway")}
               className={
                 selected === "waterway"
                   ? "projects__type--selected projects__type"
@@ -75,7 +93,7 @@ const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
             </p>
           </div>
           <div className="projects__container">
-            {projects.map((project) => (
+            {showedProjects.map((project) => (
               <Link
                 href={`/${lang}/projects/${project.slug}`}
                 className="projects__link"

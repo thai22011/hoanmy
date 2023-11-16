@@ -59,7 +59,7 @@ const ProjectsCarousel: React.FC<Props> = ({ children }) => {
     touchEventOptions: { passive: true },
   });
 
-  console.log("handler: ", handlers);
+  // console.log("handler: ", handlers);
   return (
     <div {...handlers} style={{ touchAction: "pan-y" }}>
       <div className="wrapper">
