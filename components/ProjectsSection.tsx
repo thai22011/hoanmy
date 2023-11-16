@@ -12,7 +12,6 @@ interface Props {
 const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
   const [showedProjects, setShowedProjects] = useState(projects);
   const [selected, setSelected] = useState("all");
-  console.log(projects);
 
   const handleChange = (category: string) => {
     setSelected(category);
@@ -93,8 +92,9 @@ const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
             </p>
           </div>
           <div className="projects__container">
-            {showedProjects.map((project) => (
+            {showedProjects.map((project, index) => (
               <Link
+                key={index}
                 href={`/${lang}/projects/${project.slug}`}
                 className="projects__link"
               >

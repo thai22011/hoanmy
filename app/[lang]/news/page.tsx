@@ -22,8 +22,8 @@ const NewsPage = async ({ params: { lang } }: { params: { lang: Locale } }) => {
         </section>
         <section className="news">
           <div>
-            {news.map((article: NewsPreview) => (
-              <Link href={`/${lang}/news/${article.slug}`}>
+            {news.map((article: NewsPreview, index: number) => (
+              <Link key={index} href={`/${lang}/news/${article.slug}`}>
                 <div>{article.title}</div>
                 <img src={article.image} alt="" />
                 <p>{article.description}</p>
