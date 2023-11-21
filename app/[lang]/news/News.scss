@@ -1,12 +1,16 @@
 @use "../../../styles/globals/mixins" as *;
+@use "../../../styles/globals/variables" as *;
 
 .hero-news {
   background-image: url("/crane.jpg");
   background-color: rgba(0, 0, 0, 0.445);
   background-blend-mode: overlay;
-  height: 50vh;
+  height: 350px;
+  @include breakpoint(1000px) {
+    height: 50vh;
+  }
   &__wrapper {
-    padding: 72px 20px;
+    padding: $padding-vertical-mobile 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,14 +21,45 @@
   }
   &__heading {
     color: #fff;
-    font-size: 64px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%; /* 76.8px */
+    @include breakpoint(1000px) {
+      font-size: 64px;
+    }
   }
   &__red {
-    width: 60px;
-    height: 20px;
+    width: 30px;
+    height: 15px;
     background-color: #ba1b1d;
+    @include breakpoint(1000px) {
+      width: 60px;
+      height: 20px;
+    }
+  }
+}
+
+.news {
+  padding: $padding-vertical-mobile 20px;
+  &__div-link {
+    position: relative;
+    @include breakpoint(1000px) {
+      width: 350px;
+    }
+  }
+  &__title {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.373);
+    width: 100%;
+    color: white;
+    padding: 12px;
+  }
+  &__image {
+    width: 100%;
+    @include breakpoint(1000px) {
+      width: 350px;
+    }
   }
 }

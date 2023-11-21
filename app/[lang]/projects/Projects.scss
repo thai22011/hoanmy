@@ -1,12 +1,16 @@
 @use "../../../styles/globals/mixins" as *;
+@use "../../../styles/globals/variables" as *;
 
 .hero-projects {
   background-image: url("/crane.jpg");
   background-color: rgba(0, 0, 0, 0.445);
   background-blend-mode: overlay;
-  height: 50vh;
+  height: 300px;
+  @include breakpoint(1000px) {
+    height: 50vh;
+  }
   &__wrapper {
-    padding: 72px 20px;
+    padding: $padding-vertical-mobile 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,28 +21,35 @@
   }
   &__heading {
     color: #fff;
-    font-size: 64px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%; /* 76.8px */
+    @include breakpoint(1000px) {
+      font-size: 64px;
+    }
   }
   &__red {
-    width: 60px;
-    height: 20px;
     background-color: #ba1b1d;
+    width: 30px;
+    height: 10px;
+    @include breakpoint(1000px) {
+      width: 60px;
+      height: 20px;
+    }
   }
 }
 
 .projects {
   &__wrapper {
-    padding: 72px 20px;
+    padding: $padding-vertical-mobile 20px;
     @include breakpoint(1000px) {
       padding: 72px 100px;
     }
   }
   &__mobile-menu {
     // border-bottom: 1px solid #dbd8d7;
-    padding-bottom: 24px;
+
     margin-bottom: 48px;
     overflow: auto;
     white-space: nowrap;
@@ -46,6 +57,7 @@
     justify-content: flex-start;
 
     @include breakpoint(1000px) {
+      padding-bottom: 24px;
       margin: auto;
       justify-content: center;
     }
@@ -73,6 +85,15 @@
 
   &__link {
     width: 250px;
+    position: relative;
+  }
+  &__name {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    padding: 12px;
+    bottom: 0;
+    background-color: #312c4078;
   }
   &__image {
     object-fit: cover;

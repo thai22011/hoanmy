@@ -60,9 +60,15 @@
     padding: 14px 18px;
     text-align: center;
     text-decoration: none;
+    &:hover {
+      background-color: #a9191b;
+    }
     &--modifier {
       color: #ba1b1d;
       background-color: #f4f1f1;
+      &:hover {
+        background-color: #e6e3e3;
+      }
     }
   }
 }

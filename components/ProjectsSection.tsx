@@ -98,7 +98,7 @@ const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
                 href={`/${lang}/projects/${project.slug}`}
                 className="projects__link"
               >
-                <p>{project.name}</p>
+                <p className="projects__name">{project.name}</p>
                 <img
                   className="projects__image"
                   src={project.image}

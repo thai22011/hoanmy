@@ -1,4 +1,5 @@
 @use "../../styles/globals/mixins" as *;
+@use "../../styles/globals/variables" as *;
 
 .hero {
   background-image: url("/crane.jpg");
@@ -44,10 +45,14 @@
   &__text {
     color: #fff;
 
-    font-size: 18px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 300;
     line-height: 120%; /* 21.6px */
+
+    @include breakpoint(1000px) {
+      font-size: 28px;
+    }
   }
   &__links-div {
     margin-top: 8px;
@@ -67,15 +72,21 @@
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
+    &:hover {
+      background-color: #a9191b;
+    }
     &--modifier {
       color: #ba1b1d;
       background-color: #f4f1f1;
+      &:hover {
+        background-color: #dbd8d7;
+      }
     }
   }
 }
 
 .force {
-  padding: 72px 20px;
+  padding: $padding-vertical-mobile 20px;
   position: relative;
   background: #f4f1f1;
   @include breakpoint(900px) {
@@ -102,8 +113,9 @@
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 30px;
     @include breakpoint(900px) {
+      gap: 48px;
       flex-direction: row-reverse;
       justify-content: space-between;
     }
@@ -117,7 +129,7 @@
   &__text-div {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     @include breakpoint(900px) {
       width: 50%;
       justify-content: center;
@@ -154,21 +166,25 @@
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
+    &:hover {
+      background-color: #a9191b;
+    }
   }
 }
 
 .stats {
   background-color: #e4e1e0;
-  padding: 72px 20px;
+  padding: $padding-vertical-mobile 20px;
   @include breakpoint(1000px) {
-    padding: 80px 100px;
+    padding: $padding-vertical-desktop 100px;
   }
   &__wrapper {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     @include breakpoint(1000px) {
       flex-direction: row;
+      gap: 40px;
     }
   }
   &__content {
@@ -216,9 +232,9 @@
 }
 //WORK----------------------------
 .work {
-  padding: 72px 16px;
+  padding: $padding-vertical-mobile 20px;
   @include breakpoint(1000px) {
-    padding: 80px 100px;
+    padding: $padding-vertical-desktop 100px;
   }
 
   &__text-content {
@@ -278,14 +294,17 @@
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
+    &:hover {
+      background-color: #a9191b;
+    }
   }
 }
 //ABOUT--------------------------
 .about {
   background-color: #f4f1f1;
-  padding: 72px 20px;
+  padding: $padding-vertical-mobile 20px;
   @include breakpoint(1000px) {
-    padding: 72px 100px;
+    padding: $padding-vertical-desktop 100px;
   }
   &__heading-mobile {
     color: #251d1b;
@@ -348,11 +367,14 @@
     font-style: normal;
     font-weight: 500;
     line-height: 120%; /* 33.6px */
+    @include breakpoint(1000px) {
+      font-size: 40px;
+    }
   }
   &__mobile-menu {
     border-bottom: 1px solid #dbd8d7;
     padding-bottom: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
     overflow: auto;
     white-space: nowrap;
     @include breakpoint(1000px) {
@@ -404,6 +426,9 @@
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
+    &:hover {
+      background-color: #a9191b;
+    }
   }
 }
 
@@ -432,6 +457,9 @@
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
+    &:hover {
+      background-color: #a9191b;
+    }
   }
   &__list {
     padding: 0;
@@ -468,7 +496,7 @@
 
 .community {
   background-color: #3c3634;
-  padding: 72px 20px;
+  padding: $padding-vertical-mobile 20px;
   @include breakpoint(1200px) {
     padding: 140px 100px;
   }

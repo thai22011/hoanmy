@@ -81,7 +81,81 @@ const project = {
             title: 'Content',
             type: 'array',
             of: [{type: 'block'}]
-        }
+        },
+        {
+            name:'image',
+            title: 'Project Photo 1',
+            type: 'image',
+            options:{hotspot: true},
+            fields: [
+                {
+            name: 'alt',
+            title: 'Alt Tag',
+            type: 'string'
+                }
+            ]
+              
+                
+        }, {
+            name:'image',
+            title: 'Project Photo 2',
+            type: 'image',
+            options:{hotspot: true},
+            fields: [
+                {
+            name: 'alt',
+            title: 'Alt Tag',
+            type: 'string'
+                }
+            ]
+              
+                
+        },
+        {
+            name:'image',
+            title: 'Project Photo 3',
+            type: 'image',
+            options:{hotspot: true},
+            fields: [
+                {
+            name: 'alt',
+            title: 'Alt Tag',
+            type: 'string'
+                }
+            ]
+              
+                
+        },
+        {
+            name:'image',
+            title: 'Project Photo 4',
+            type: 'image',
+            options:{hotspot: true},
+            fields: [
+                {
+            name: 'alt',
+            title: 'Alt Tag',
+            type: 'string'
+                }
+            ]
+              
+                
+        },
+        {
+            name:'image',
+            title: 'Project Photo 5',
+            type: 'image',
+            options:{hotspot: true},
+            fields: [
+                {
+            name: 'alt',
+            title: 'Alt Tag',
+            type: 'string'
+                }
+            ]
+              
+                
+        },
     ]
 
 

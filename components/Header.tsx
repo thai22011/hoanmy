@@ -32,7 +32,7 @@ const Header: React.FC<Props> = ({ dictionary, lang }) => {
               : "header__logo"
           }
         >
-          <Image src={"/hoanmy-logo2.png"} width={55} height={55} alt="logo" />
+          <Image src={"/hoanmy-logo2.png"} width={75} height={75} alt="logo" />
         </Link>
         <div className="header__hamburger">
           <Image

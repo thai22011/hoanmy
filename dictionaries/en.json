@@ -63,6 +63,7 @@
     "class6": "Government"
   },
   "NewsPage": {
+    "heading": "News",
     "client": "Client",
     "market": "Market",
     "completion": "Completion",
