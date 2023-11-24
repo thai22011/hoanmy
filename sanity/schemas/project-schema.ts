@@ -83,7 +83,7 @@ const project = {
             of: [{type: 'block'}]
         },
         {
-            name:'image',
+            name:'project-photo-1',
             title: 'Project Photo 1',
             type: 'image',
             options:{hotspot: true},
@@ -97,7 +97,7 @@ const project = {
               
                 
         }, {
-            name:'image',
+            name:'project-photo-2',
             title: 'Project Photo 2',
             type: 'image',
             options:{hotspot: true},
@@ -112,7 +112,7 @@ const project = {
                 
         },
         {
-            name:'image',
+            name:'project-photo-3',
             title: 'Project Photo 3',
             type: 'image',
             options:{hotspot: true},
@@ -127,7 +127,7 @@ const project = {
                 
         },
         {
-            name:'image',
+            name:'project-photo-4',
             title: 'Project Photo 4',
             type: 'image',
             options:{hotspot: true},
@@ -142,7 +142,7 @@ const project = {
                 
         },
         {
-            name:'image',
+            name:'project-photo-5',
             title: 'Project Photo 5',
             type: 'image',
             options:{hotspot: true},
