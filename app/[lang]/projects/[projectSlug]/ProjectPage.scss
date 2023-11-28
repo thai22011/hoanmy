@@ -94,4 +94,10 @@
     text-align: center;
     text-decoration: none;
   }
+  &__gallery-image {
+    width: 100%;
+    @include breakpoint(1000px) {
+      width: 30%;
+    }
+  }
 }

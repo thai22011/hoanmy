@@ -48,6 +48,33 @@ export default async function ProjectPage({
           <div className="project__text">
             <PortableText value={project.content} />
           </div>
+          <div className="project__gallery">
+            <img
+              className="project__gallery-image"
+              src={project.gallery1}
+              alt=""
+            />
+            <img
+              className="project__gallery-image"
+              src={project.gallery2}
+              alt=""
+            />
+            <img
+              className="project__gallery-image"
+              src={project.gallery3}
+              alt=""
+            />
+            <img
+              className="project__gallery-image"
+              src={project.gallery4}
+              alt=""
+            />
+            <img
+              className="project__gallery-image"
+              src={project.gallery5}
+              alt=""
+            />
+          </div>
 
           <div className="project__button-div">
             <Link className="project__button" href={`/${params.lang}/projects`}>

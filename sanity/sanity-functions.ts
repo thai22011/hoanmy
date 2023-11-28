@@ -57,7 +57,12 @@ export const getArticle = async (slug: string) => {
             "image":image.asset->url,
             "slug": slug.current,
             desciption,
-            content
+            content,
+            "gallery1":newsPhoto1.asset->url,
+            "gallery2":newsPhoto2.asset->url,
+            "gallery3":newsPhoto3.asset->url,
+            "gallery4":newsPhoto4.asset->url,
+            "gallery5":newsPhoto5.asset->url
         }`,{slug}
     )
 }
@@ -73,7 +78,12 @@ groq`*[_type == "project" && slug.current == $slug][0] {
     client,
     budget,
     completed,
-    content
+    content,
+    "gallery1":projectPhoto1.asset->url,
+    "gallery2":projectPhoto2.asset->url,
+    "gallery3":projectPhoto3.asset->url,
+    "gallery4":projectPhoto4.asset->url,
+    "gallery5":projectPhoto5.asset->url,
 
 }`,{slug}
 

@@ -26,6 +26,33 @@ const NewsPage = async ({
           <div className="article__text">
             <PortableText value={article.content} />
           </div>
+          <div className="article__gallery">
+            <img
+              className="article__gallery-image"
+              src={article.gallery1}
+              alt=""
+            />
+            <img
+              className="article__gallery-image"
+              src={article.gallery2}
+              alt=""
+            />
+            <img
+              className="article__gallery-image"
+              src={article.gallery3}
+              alt=""
+            />
+            <img
+              className="article__gallery-image"
+              src={article.gallery4}
+              alt=""
+            />
+            <img
+              className="article__gallery-image"
+              src={article.gallery5}
+              alt=""
+            />
+          </div>
 
           <div className="article__button-div">
             <Link className="article__button" href={`/${params.lang}/news`}>

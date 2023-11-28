@@ -62,7 +62,78 @@ const news = {
             title: 'Content',
             type: 'array',
             of: [{type: 'block'}]
-        }
+        },
+        {
+            name:'newsPhoto1',
+            title: 'News Photo 1',
+            type: 'image',
+            options:{hotspot: true},
+            fields: [
+                {
+            name: 'alt',
+            title: 'Alt Tag',
+            type: 'string'
+                }
+            ]
+              
+                
+        }, {
+            name:'newsPhoto2',
+            title: 'News Photo 2',
+            type: 'image',
+            options:{hotspot: true},
+            fields: [
+                {
+            name: 'alt',
+            title: 'Alt Tag',
+            type: 'string'
+                }
+            ]
+              
+                
+        }, {
+            name:'newsPhoto3',
+            title: 'News Photo 3',
+            type: 'image',
+            options:{hotspot: true},
+            fields: [
+                {
+            name: 'alt',
+            title: 'Alt Tag',
+            type: 'string'
+                }
+            ]
+              
+                
+        }, {
+            name:'newsPhoto4',
+            title: 'News Photo 4',
+            type: 'image',
+            options:{hotspot: true},
+            fields: [
+                {
+            name: 'alt',
+            title: 'Alt Tag',
+            type: 'string'
+                }
+            ]
+              
+                
+        }, {
+            name:'newsPhoto5',
+            title: 'News Photo 5',
+            type: 'image',
+            options:{hotspot: true},
+            fields: [
+                {
+            name: 'alt',
+            title: 'Alt Tag',
+            type: 'string'
+                }
+            ]
+              
+                
+        },
     ]
 
 
