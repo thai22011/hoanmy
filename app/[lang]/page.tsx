@@ -30,15 +30,20 @@ export default async function IndexPage({
             <h2 className="hero__title">{dictionary["Header"].heading}</h2>
             <p className="hero__text">{dictionary["Header"].subheading}</p>
             <div className="hero__links-div">
-              <Link className="hero__link" href={`/${lang}/company`}>
+              <a
+                target="_blank"
+                className="hero__link"
+                href="https://forms.gle/7ZQ3CcVAtpmLPr6U8"
+              >
                 {dictionary["Header"].button1}
-              </Link>
-              <Link
+              </a>
+              <a
+                target="_blank"
                 className="hero__link hero__link--modifier"
-                href={`/${lang}/careers`}
+                href="https://forms.gle/Y5wGyGLHjHvNh6ax8"
               >
                 {dictionary["Header"].button2}
-              </Link>
+              </a>
             </div>
           </div>
         </section>

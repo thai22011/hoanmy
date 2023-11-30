@@ -74,9 +74,13 @@ const Header: React.FC<Props> = ({ dictionary, lang }) => {
                 </Link>
               </li>
               <li>
-                <Link className="dropdown__link" href={`/${lang}/careers`}>
+                <a
+                  target="_blank"
+                  className="dropdown__link"
+                  href="https://drive.google.com/drive/folders/161j6dcrHBGhm31zk4xT8vQkda3iyUbB1?usp=sharing"
+                >
                   {dictionary.nav5}
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
@@ -165,9 +169,13 @@ const Header: React.FC<Props> = ({ dictionary, lang }) => {
               </Link>
             </li>
             <li className="header__nav-li">
-              <Link className="header__nav-link" href={`/${lang}/careers`}>
+              <a
+                target="_blank"
+                className="header__nav-link"
+                href="https://drive.google.com/drive/folders/161j6dcrHBGhm31zk4xT8vQkda3iyUbB1?usp=sharing"
+              >
                 {dictionary.nav5}
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

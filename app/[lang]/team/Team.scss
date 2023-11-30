@@ -7,7 +7,7 @@
   background-blend-mode: overlay;
   height: 350px;
   @include breakpoint(1000px) {
-    height: 50vh;
+    height: 60vh;
   }
 
   &__wrapper {
@@ -28,6 +28,7 @@
     line-height: 120%; /* 76.8px */
     @include breakpoint(1000px) {
       font-size: 64px;
+      padding-top: 86px;
     }
   }
   &__red {
