@@ -59,7 +59,7 @@ const project = {
             type: 'string',
             options: {
                 list: [
-                    {title:'Vietnamese', value: 'vn'},
+                    {title:'Vietnamese', value: 'vi'},
                     {title: 'English', value: 'en'}
                 ],
                 layout: 'radio'
