@@ -18,7 +18,7 @@
     "Work": {
       "heading": "Các Công Trình Tiêu Biểu",
       "text": "Trong vòng 30 năm qua, chúng tôi đặt chữ “Tín” là tiêu chí hàng đầu trong việc thực hiện các dự án chất lượng cao ở nhiều lĩnh vực, tập trung ở các công trình dân dụng, giao thông và thủy lợi. Cam kết của chúng tôi về chất lượng hơn là số lượng đã là động lực cho sự phát triển từ việc thực hiện các dự án từ nhỏ tới lớn. ",
-      "button": "Xem thêm"
+      "button": "Xem Thêm"
     },
     "AboutUs": {
       "title1": "Lịch Sử Hình Thành",
@@ -34,11 +34,11 @@
     },
     "News": {
       "heading": "Tin Tức",
-      "view_all": "Xem thêm"
+      "view_all": "Xem tất cả tin tức"
     },
     "Community": {
       "title": "Vì lợi ích 10 năm trồng cây, Vì lợi ích trăm năm trồng người. - Hồ Chí Minh",
-      "text": "Cty TNHH XD Hoàn Mỹ đầu tư đào tạo nâng cao năng lực cho các nhân sự giỏi và muốn thăng tiến ở công ty. Nhân sự càng có tay nghề tốt thì chất lượng sản phẩm càng cao, rủi ro càng giảm và lợi nhuận càng tăng. Ngoài ra, công ty còn dành một phần lợi nhuận hàng năm làm quỹ cho các hoạt động từ thiên ở địa phương và các khu vực lân cận."
+      "text": "Cty TNHH XD Hoàn Mỹ đầu tư đào tạo nâng cao năng lực cho các nhân sự giỏi và muốn thăng tiến ở công ty. Nhân sự càng có tay nghề tốt thì chất lượng sản phẩm càng cao, rủi ro càng giảm và lợi nhuận càng tăng. Ngoài ra, công ty còn dành một phần lợi nhuận hàng năm làm quỹ cho các hoạt động từ thiên ở địa phương và các khu vực lân cận. "
     }
   },
   "TeamPage": {
@@ -47,12 +47,12 @@
       "heading": "Lời Cam Kết Đến Chất Lượng Và Sản Phẩm",
       "text": "Cty TNHH XD Hoàn Mỹ là một cộng ty của người Việt, do người Việt làm chủ và vì người Việt để phát triển. Hoàn Mỹ được điều hành bởi một ban quản trị do chú Nguyễn Tấn Tài làm giám đốc, cùng với sự hỗ trợ của ban cố vấn và các kĩ sư trưởng tại từng công trình."
     },
-     "Main": {
-      "heading1": "Hội Đồng Quản trị",
+    "Main": {
+      "heading1": "Hội Đồng Quản Trị",
       "heading2": "Kế Toán",
       "heading3": "Kĩ Sư"
-    },
-  
+    }
+  },
   "ProjectsPage": {
     "heading": "Công Trình Tiêu Biểu",
     "class1": "Tất Cả",
@@ -96,18 +96,18 @@
     "nav1": "Giới Thiệu",
     "nav2": "Công Trình",
     "nav3": "Nhân lực",
-    "nav4": "Tin  Tức",
+    "nav4": "Tin Tức",
     "nav5": "Tuyển Dụng",
     "heading": "Một công trình chất lượng bắt đầu từ mối quan hệ chất lượng",
     "subheading": "Xây đựng cho hiện tại, cho tương lại, và cho tất cả mọi người.",
-    "button1": "Bắt đầu công trình mới với chúng tôi",
-    "button2": "Bắt đầu sự nghiệp mới với chúng tôi"
+    "button1": "Bắt đầu công trình mới",
+    "button2": "Bắt đầu sự nghiệp mới"
   },
   "Footer": {
     "title": "Muốn làm việc cùng nhau?",
     "text": "Anh chị có một dự án muốn thực hiên hay đang tìm kiếm một đối tác xây dựng đáng tin cậy, hay muốn tiến bước tiếp theo trong sự nghiệp của mình, hãy liên lạc với chúng tôi bằng nút bên dưới",
-    "button1": "Bắt đầu công trình mới với chúng tôi",
-    "button2": "Bắt đầu sự nghiệp mới với chúng tôi",
+    "button1": "Bắt đầu công trình mới",
+    "button2": "Bắt đầu sự nghiệp mới",
     "heading1": "Liên kết",
     "heading2": "Liên lạc",
     "heading3": "Liên Lạc",
@@ -115,7 +115,7 @@
     "qlink2": "Giới Thiệu",
     "qlink3": "Công Trình",
     "qlink4": "Nhân lực",
-    "qlink5": "Tin Tức",
+    "qlink5": "Tin  Tức",
     "qlink6": "Tuyển Dụng"
   }
 }
