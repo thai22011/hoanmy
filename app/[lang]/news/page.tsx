@@ -5,6 +5,7 @@ import { getDictionary } from "@/get-dictionary";
 import "./News.scss";
 import { getNewsPreviews } from "@/sanity/sanity-functions";
 import { NewsPreview } from "@/types";
+export const revalidate = 0;
 const NewsPage = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const dictionary = await getDictionary(lang);
   const news = await getNewsPreviews(lang);

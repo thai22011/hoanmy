@@ -51,6 +51,10 @@ const Header: React.FC<Props> = ({ dictionary, lang }) => {
           <p className="dropdown__close-text">Close</p>
         </div>
         <div className="dropdown__nav">
+          <div className="dropdown__langs">
+            <LocaleSwitcher />
+          </div>
+
           <nav>
             <ul className="dropdown__ul">
               <li>
@@ -86,18 +90,25 @@ const Header: React.FC<Props> = ({ dictionary, lang }) => {
           </nav>
         </div>
         <div className="dropdown__socials">
-          <Image alt="facebook" height={40} width={40} src={"/facebook.svg"} />
-          <Image alt="tiktok" height={40} width={40} src={"/tiktok.svg"} />
-          <Image
-            alt="instagram"
-            height={40}
-            width={40}
-            src={"/instagram.svg"}
-          />
-          <Image alt="linkedin" height={40} width={40} src={"/linkedin.svg"} />
-        </div>
-        <div className="dropdown__langs">
-          <LocaleSwitcher />
+          <a target="_blank" href="https://www.facebook.com/hoanmyco.vn">
+            <Image
+              alt="facebook"
+              height={40}
+              width={40}
+              src={"/facebook.svg"}
+            />
+          </a>
+          <a target="_blank" href="https://www.tiktok.com/@hoanmyco.vn">
+            <Image alt="tiktok" height={40} width={40} src={"/tiktok.svg"} />
+          </a>
+          <a target="_blank" href="https://instagram.com/hoanmyco.vn">
+            <Image
+              alt="instagram"
+              height={40}
+              width={40}
+              src={"/instagram.svg"}
+            />
+          </a>
         </div>
       </div>
       {/* ----------DESKTOP NAV MENU------- */}

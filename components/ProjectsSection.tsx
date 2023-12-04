@@ -12,7 +12,7 @@ interface Props {
 const ProjectsSection: React.FC<Props> = ({ projects, dictionary, lang }) => {
   const [showedProjects, setShowedProjects] = useState(projects);
   const [selected, setSelected] = useState("all");
-
+  console.log(projects);
   const handleChange = (category: string) => {
     setSelected(category);
 

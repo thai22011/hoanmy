@@ -124,7 +124,7 @@ export default async function IndexPage({
               </h2>
               <p className="work__text">{dictionary["HomePage"].Work.text}</p>
             </div>
-            <div>
+            <div className="work__container">
               {projects.map((project: ProjectPreview, index: number) => (
                 <Link
                   key={index}
@@ -132,10 +132,11 @@ export default async function IndexPage({
                   href={`/${lang}/projects/${project.slug}`}
                 >
                   {project.image && (
-                    <Image
-                      width={80}
-                      height={80}
-                      layout="responsive"
+                    <img
+                      className="work__image"
+                      // width={80}
+                      // height={80}
+                      // layout="responsive"
                       alt={project.name}
                       src={project.image}
                     />
@@ -180,10 +181,11 @@ export default async function IndexPage({
               href={`/${lang}/news/${article.slug}`}
             >
               {article.image && (
-                <Image
-                  width={80}
-                  height={80}
-                  layout="responsive"
+                <img
+                  className="work__image"
+                  // width={80}
+                  // height={80}
+                  // layout="responsive"
                   alt={article.title}
                   src={article.image}
                 />

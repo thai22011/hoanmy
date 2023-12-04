@@ -42,18 +42,30 @@
 }
 
 .news {
-  padding: $padding-vertical-mobile 20px;
+  &__wrapper {
+    padding: $padding-vertical-mobile 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    @include breakpoint(1000px) {
+      padding: 72px 100px;
+    }
+  }
   &__div-link {
     position: relative;
     @include breakpoint(1000px) {
       width: 350px;
+      // height: 300px;
+
+      overflow: hidden;
     }
   }
   &__title {
     position: absolute;
-    bottom: 0;
+    bottom: 7px;
     background-color: rgba(0, 0, 0, 0.373);
     width: 100%;
+    left: 0;
     color: white;
     padding: 12px;
   }
@@ -61,6 +73,7 @@
     width: 100%;
     @include breakpoint(1000px) {
       width: 350px;
+      height: 350px;
     }
   }
 }

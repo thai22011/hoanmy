@@ -83,22 +83,38 @@
       font-weight: bold;
     }
   }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(1000px) {
+      flex-direction: row;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+  }
 
   &__link {
-    width: 250px;
+    width: 100%;
     position: relative;
+    @include breakpoint(1000px) {
+      width: 350px;
+    }
   }
   &__name {
     position: absolute;
     color: white;
     font-size: 24px;
     padding: 12px;
-    bottom: 0;
+    bottom: 7px;
+    left: 0;
     background-color: #312c4078;
   }
   &__image {
-    object-fit: cover;
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    @include breakpoint(1000px) {
+      object-fit: cover;
+      width: 350px;
+      height: 350px;
+    }
   }
 }
