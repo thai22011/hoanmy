@@ -5,6 +5,7 @@ import { getDictionary } from "@/get-dictionary";
 import "./Projects.scss";
 import ProjectsSection from "@/components/ProjectsSection";
 import { getProjectPreviews } from "@/sanity/sanity-functions";
+export const revalidate = 0;
 const ProjectsPage = async ({
   params: { lang },
 }: {

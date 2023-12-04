@@ -80,10 +80,11 @@
 .dropdown {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 12px 24px;
+  gap: 72px;
   height: 100vh;
-  width: 100vw;
+  width: 80vw; // This value was changed to stop the full width of the dropdown
   background-color: #3c3634;
   top: 0;
   right: 0;
@@ -114,6 +115,7 @@
   &__ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 72px;
   }
   &__link {
     font-size: 24px;

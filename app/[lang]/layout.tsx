@@ -31,6 +31,6 @@ export default function Root({
 }
 
 export const metadata = {
-  title: "HoanMy Construction",
+  title: "Hoan My Construction",
   description: "Building for today, for tomorrow, for everyone.",
 };

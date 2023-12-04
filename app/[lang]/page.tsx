@@ -10,6 +10,7 @@ import { getNewsPreviews, getProjectPreviews } from "@/sanity/sanity-functions";
 import ProjectsCarousel from "@/components/ProjectsCarousel";
 import AboutUsSection from "@/components/AboutUsSection";
 import { ProjectPreview, NewsPreview } from "@/types";
+export const revalidate = 0;
 export default async function IndexPage({
   params: { lang },
 }: {
@@ -30,15 +31,20 @@ export default async function IndexPage({
             <h2 className="hero__title">{dictionary["Header"].heading}</h2>
             <p className="hero__text">{dictionary["Header"].subheading}</p>
             <div className="hero__links-div">
-              <Link className="hero__link" href={`/${lang}/company`}>
+              <a
+                target="_blank"
+                className="hero__link"
+                href="https://forms.gle/7ZQ3CcVAtpmLPr6U8"
+              >
                 {dictionary["Header"].button1}
-              </Link>
-              <Link
+              </a>
+              <a
+                target="_blank"
                 className="hero__link hero__link--modifier"
-                href={`/${lang}/careers`}
+                href="https://forms.gle/Y5wGyGLHjHvNh6ax8"
               >
                 {dictionary["Header"].button2}
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -119,7 +125,7 @@ export default async function IndexPage({
               </h2>
               <p className="work__text">{dictionary["HomePage"].Work.text}</p>
             </div>
-            <div>
+            <div className="work__container">
               {projects.map((project: ProjectPreview, index: number) => (
                 <Link
                   key={index}
@@ -127,10 +133,11 @@ export default async function IndexPage({
                   href={`/${lang}/projects/${project.slug}`}
                 >
                   {project.image && (
-                    <Image
-                      width={80}
-                      height={80}
-                      layout="responsive"
+                    <img
+                      className="work__image"
+                      // width={80}
+                      // height={80}
+                      // layout="responsive"
                       alt={project.name}
                       src={project.image}
                     />
@@ -167,25 +174,31 @@ export default async function IndexPage({
         /> */}
 
         <section className="work">
-          <h2 className="work__heading">{dictionary.HomePage.News.heading}</h2>
-          {news.map((article: NewsPreview, index: number) => (
-            <Link
-              key={index}
-              className="work__link"
-              href={`/${lang}/news/${article.slug}`}
-            >
-              {article.image && (
-                <Image
-                  width={80}
-                  height={80}
-                  layout="responsive"
-                  alt={article.title}
-                  src={article.image}
-                />
-              )}
-              <h3 className="work__project-name">{article.title}</h3>
-            </Link>
-          ))}
+          <h2 className="work__heading work__heading--news">
+            {dictionary.HomePage.News.heading}
+          </h2>
+          <div className="work__container">
+            {news.map((article: NewsPreview, index: number) => (
+              <Link
+                key={index}
+                className="work__link"
+                href={`/${lang}/news/${article.slug}`}
+              >
+                {article.image && (
+                  <img
+                    className="work__image"
+                    // width={80}
+                    // height={80}
+                    // layout="responsive"
+                    alt={article.title}
+                    src={article.image}
+                  />
+                )}
+                <h3 className="work__project-name">{article.title}</h3>
+              </Link>
+            ))}
+          </div>
+
           <div className="work__button-div">
             <Link className="work__button" href={`/${lang}/company`}>
               {dictionary["HomePage"].News.view_all}

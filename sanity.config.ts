@@ -9,7 +9,8 @@ const config = defineConfig({
    apiVersion: '2023-07-07',
     basePath: '/en/admin',
     plugins: [deskTool()],
-    schema: {types: schemas}
+    schema: {types: schemas},
+    
 
 })
 

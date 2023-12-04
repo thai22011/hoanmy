@@ -51,6 +51,10 @@ const Header: React.FC<Props> = ({ dictionary, lang }) => {
           <p className="dropdown__close-text">Close</p>
         </div>
         <div className="dropdown__nav">
+          <div className="dropdown__langs">
+            <LocaleSwitcher />
+          </div>
+
           <nav>
             <ul className="dropdown__ul">
               <li>
@@ -74,26 +78,37 @@ const Header: React.FC<Props> = ({ dictionary, lang }) => {
                 </Link>
               </li>
               <li>
-                <Link className="dropdown__link" href={`/${lang}/careers`}>
+                <a
+                  target="_blank"
+                  className="dropdown__link"
+                  href="https://drive.google.com/drive/folders/161j6dcrHBGhm31zk4xT8vQkda3iyUbB1?usp=sharing"
+                >
                   {dictionary.nav5}
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
         </div>
         <div className="dropdown__socials">
-          <Image alt="facebook" height={40} width={40} src={"/facebook.svg"} />
-          <Image alt="tiktok" height={40} width={40} src={"/tiktok.svg"} />
-          <Image
-            alt="instagram"
-            height={40}
-            width={40}
-            src={"/instagram.svg"}
-          />
-          <Image alt="linkedin" height={40} width={40} src={"/linkedin.svg"} />
-        </div>
-        <div className="dropdown__langs">
-          <LocaleSwitcher />
+          <a target="_blank" href="https://www.facebook.com/hoanmyco.vn">
+            <Image
+              alt="facebook"
+              height={40}
+              width={40}
+              src={"/facebook.svg"}
+            />
+          </a>
+          <a target="_blank" href="https://www.tiktok.com/@hoanmyco.vn">
+            <Image alt="tiktok" height={40} width={40} src={"/tiktok.svg"} />
+          </a>
+          <a target="_blank" href="https://instagram.com/hoanmyco.vn">
+            <Image
+              alt="instagram"
+              height={40}
+              width={40}
+              src={"/instagram.svg"}
+            />
+          </a>
         </div>
       </div>
       {/* ----------DESKTOP NAV MENU------- */}
@@ -165,9 +180,13 @@ const Header: React.FC<Props> = ({ dictionary, lang }) => {
               </Link>
             </li>
             <li className="header__nav-li">
-              <Link className="header__nav-link" href={`/${lang}/careers`}>
+              <a
+                target="_blank"
+                className="header__nav-link"
+                href="https://drive.google.com/drive/folders/161j6dcrHBGhm31zk4xT8vQkda3iyUbB1?usp=sharing"
+              >
                 {dictionary.nav5}
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

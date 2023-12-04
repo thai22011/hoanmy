@@ -51,6 +51,32 @@
       "heading1": "Board of Directors",
       "heading2": "Our Architects",
       "heading3": "Our Engineers"
+    },
+    "Members": {
+      "bod": {
+        "name1": "",
+        "title1": "",
+        "bio1": "",
+        "name2": "",
+        "title2": "",
+        "bio2": ""
+      },
+      "accountants": {
+        "name1": "",
+        "title1": "",
+        "bio1": "",
+        "name2": "",
+        "title2": "",
+        "bio2": ""
+      },
+      "architects": {
+        "name1": "",
+        "title1": "",
+        "bio1": "",
+        "name2": "",
+        "title2": "",
+        "bio2": ""
+      }
     }
   },
   "ProjectsPage": {
