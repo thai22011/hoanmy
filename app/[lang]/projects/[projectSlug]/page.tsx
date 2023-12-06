@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { PortableText } from "@portabletext/react";
 import "./ProjectPage.scss";
 import Link from "next/link";
+export const revalidate = 0;
 export default async function ProjectPage({
   params,
 }: {

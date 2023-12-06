@@ -70,7 +70,7 @@ const AboutUsSection: React.FC<Props> = ({ lang, dictionary }) => {
           <div className="about__focus-div">
             <h3 className="about__focus-title">{focusText.title}</h3>
             <p className="about__focus-text">{focusText.text}</p>
-            <Link className="about__button" href={`/about/${lang}`}>
+            <Link className="about__button" href={`${lang}/company`}>
               {dictionary.button}
             </Link>
           </div>

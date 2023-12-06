@@ -16,111 +16,51 @@ interface Employee {
 const TeamSection: React.FC<Props> = ({ dictionary }) => {
   const boardOfDirectors = [
     {
-      name: "Sally",
-      title: "Director",
-      image: "/crane.jpg",
-      bio: "Really cool",
-      category: "bod",
-      id: 0,
+      name: dictionary.Members.bod.name1, // Any dictionary value is dynamic and can be translateable. The outer.inner.moreInner style of syntax is finding the values in the json dictionaries. If adding more people to the teams, you need to add them in the dictionaries AND the arrays in this component.
+      title: dictionary.Members.bod.title1,
+      image: "/crane.jpg", //These photos come from the public folder. To add more photos or update them, just make sure the photo is in the public folder. If your photo is called "photo.jpg", then your image value in the employee objects needs to be "/photo.jpg"
+      bio: dictionary.Members.bod.bio1,
+      category: "bod", // The category is important for the filter to work that shows different people. To add more board of directors later on, make sure they have the same category value of "bod", and same for the other employees as well. "accountant" for the accountants, and so on.
+      id: 0, // The id is important for the slider to work. To add more people later on, make the id increment by 1 for each new person per category.
     },
     {
-      name: "Dave",
-      title: "Director",
+      name: dictionary.Members.bod.name2,
+      title: dictionary.Members.bod.title2,
       image: "/crane.jpg",
-      bio: "Really goood",
+      bio: dictionary.Members.bod.bio2,
       category: "bod",
       id: 1,
-    },
-    {
-      name: "Alex",
-      title: "Director",
-      image: "/crane.jpg",
-      bio: "Really great",
-      category: "bod",
-      id: 2,
     },
   ];
 
   const accountants = [
     {
-      name: "Michelle",
-      title: "Accountant",
+      name: dictionary.Members.accountants.name1,
+      title: dictionary.Members.accountants.title1,
       image: "/crane.jpg",
-      bio: "So good",
+      bio: dictionary.Members.accountants.bio1,
       category: "accountant",
       id: 0,
     },
     {
-      name: "Katie",
-      title: "Accountant",
+      name: dictionary.Members.accountants.name2,
+      title: dictionary.Members.accountants.title2,
       image: "/crane.jpg",
-      bio: "So good",
+      bio: dictionary.Members.accountants.bio2,
       category: "accountant",
       id: 1,
     },
   ];
   const engineers = [
     {
-      name: "Lisa",
-      title: "Engineer",
+      name: dictionary.Members.engineers.name1,
+      title: dictionary.Members.engineers.title1,
       image: "/crane.jpg",
-      bio: "Cool!",
+      bio: dictionary.Members.engineers.bio1,
       category: "engineer",
       id: 0,
     },
-    {
-      name: "Holly",
-      title: "Engineer",
-      image: "/crane.jpg",
-      bio: "Cool!",
-      category: "engineer",
-      id: 1,
-    },
   ];
-  // const people = [
-  //   {
-  //     name: "Sally",
-  //     title: "Lead Manager",
-  //     image: "/crane.jpg",
-  //     bio: "She is really talented and cool.",
-  //     category: "engineer",
-  //   },
-  //   {
-  //     name: "Sally",
-  //     title: "Lead Manager",
-  //     image: "/crane.jpg",
-  //     bio: "She is really talented and cool.",
-  //     category: "bod",
-  //   },
-  //   {
-  //     name: "Sally",
-  //     title: "Lead Manager",
-  //     image: "/crane.jpg",
-  //     bio: "She is really talented and cool.",
-  //     category: "accountant",
-  //   },
-  //   {
-  //     name: "Sally",
-  //     title: "Lead Manager",
-  //     image: "/crane.jpg",
-  //     bio: "She is really talented and cool.",
-  //     category: "bod",
-  //   },
-  //   {
-  //     name: "Sally",
-  //     title: "Lead Manager",
-  //     image: "/crane.jpg",
-  //     bio: "She is really talented and cool.",
-  //     category: "bod",
-  //   },
-  //   {
-  //     name: "Sally",
-  //     title: "Lead Manager",
-  //     image: "/crane.jpg",
-  //     bio: "She is really talented and cool.",
-  //     category: "accountant",
-  //   },
-  // ];
 
   const [focusPeople, setFocusPeople] = useState(boardOfDirectors);
   const [modalOpen, setModalOpen] = useState(false);
@@ -206,84 +146,83 @@ const TeamSection: React.FC<Props> = ({ dictionary }) => {
       {/* MODAL HERE */}
       {modalOpen && activePerson && (
         <div className="modal">
-          <div className="modal__close-div">
-            <button
-              className="modal__close-button"
-              onClick={() => handleCloseModal()}
-            >
-              <Image
-                width={25}
-                height={25}
-                alt="close menu"
-                src={"/close.svg"}
-              />
-              <p>Close</p>
-            </button>
-          </div>
-          <div className="modal__content-div">
-            <button
-              className="modal__button-desktop"
-              disabled={activePerson.id + 1 === focusPeople.length}
-              onClick={() => handleRightClick(activePerson.id)}
-            >
-              <Image
-                className="modal__arrow--right"
-                width={20}
-                height={20}
-                alt="arrow"
-                src={"/arrow.svg"}
-              />
-            </button>
-            <div className="modal__image-div">
-              <div className="modal__image">
+          <div className="modal__wrapper">
+            <div className="modal__close-div">
+              <button
+                className="modal__close-button"
+                onClick={() => handleCloseModal()}
+              >
                 <Image
-                  height={50}
-                  width={50}
-                  layout="responsive"
+                  width={25}
+                  height={25}
+                  alt="close menu"
+                  src={"/close.svg"}
+                />
+                <p>Close</p>
+              </button>
+            </div>
+            <div className="modal__content-div">
+              <button
+                className="modal__button-desktop"
+                disabled={activePerson.id + 1 === focusPeople.length}
+                onClick={() => handleRightClick(activePerson.id)}
+              >
+                <Image
+                  className="modal__arrow--right"
+                  width={20}
+                  height={20}
+                  alt="arrow"
+                  src={"/arrow.svg"}
+                />
+              </button>
+              <div className="modal__image-div">
+                <img
+                  // layout="responsive"
                   alt={activePerson.name}
+                  className="modal__image"
                   src={activePerson.image}
                 />
+
+                <div className="modal__image-offset" />
               </div>
 
-              <div className="modal__image-offset" />
+              <div className="modal__text-div">
+                <h3 className="modal__name">{activePerson.name}</h3>
+                <h4 className="modal__title">{activePerson.title}</h4>
+                <p className="modal__bio">{activePerson.bio}</p>
+              </div>
+              <button
+                className="modal__button-desktop"
+                disabled={activePerson.id === 0}
+                onClick={() => handleLeftClick(activePerson.id)}
+              >
+                <Image width={20} height={20} alt="arrow" src={"/arrow.svg"} />
+              </button>
             </div>
-
-            <div className="modal__text-div">
-              <h3 className="modal__name">{activePerson.name}</h3>
-              <h4 className="modal__title">{activePerson.title}</h4>
-              <p className="modal__bio">{activePerson.bio}</p>
+            <div className="modal__buttons-div-mobile">
+              <button
+                className="modal__button-mobile"
+                disabled={activePerson.id === 0}
+                onClick={() => handleLeftClick(activePerson.id)}
+              >
+                <Image width={20} height={20} alt="arrow" src={"/arrow.svg"} />
+                <p className="modal__button-text">Back</p>
+              </button>
+              <button
+                className="modal__button-mobile"
+                disabled={activePerson.id + 1 === focusPeople.length}
+                onClick={() => handleRightClick(activePerson.id)}
+              >
+                <p className="modal__button-text">Next</p>
+                <Image
+                  className="modal__arrow--right"
+                  width={20}
+                  height={20}
+                  alt="arrow"
+                  src={"/arrow.svg"}
+                />
+              </button>
             </div>
-            <button
-              className="modal__button-desktop"
-              disabled={activePerson.id === 0}
-              onClick={() => handleLeftClick(activePerson.id)}
-            >
-              <Image width={20} height={20} alt="arrow" src={"/arrow.svg"} />
-            </button>
-          </div>
-          <div className="modal__buttons-div-mobile">
-            <button
-              className="modal__button-mobile"
-              disabled={activePerson.id === 0}
-              onClick={() => handleLeftClick(activePerson.id)}
-            >
-              <Image width={20} height={20} alt="arrow" src={"/arrow.svg"} />
-              <p className="modal__button-text">Back</p>
-            </button>
-            <button
-              className="modal__button-mobile"
-              disabled={activePerson.id + 1 === focusPeople.length}
-              onClick={() => handleRightClick(activePerson.id)}
-            >
-              <p className="modal__button-text">Next</p>
-              <Image
-                className="modal__arrow--right"
-                width={20}
-                height={20}
-                alt="arrow"
-                src={"/arrow.svg"}
-              />
-            </button>
           </div>
         </div>
       )}

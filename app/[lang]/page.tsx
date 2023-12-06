@@ -147,7 +147,7 @@ export default async function IndexPage({
               ))}
             </div>
             <div className="work__button-div">
-              <Link className="work__button" href={`/${lang}/company`}>
+              <Link className="work__button" href={`/${lang}/projects`}>
                 {dictionary["HomePage"].Work.button}
               </Link>
             </div>
@@ -200,7 +200,7 @@ export default async function IndexPage({
           </div>
 
           <div className="work__button-div">
-            <Link className="work__button" href={`/${lang}/company`}>
+            <Link className="work__button" href={`/${lang}/news`}>
               {dictionary["HomePage"].News.view_all}
             </Link>
           </div>

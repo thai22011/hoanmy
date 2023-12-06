@@ -5,6 +5,7 @@ import { getArticle } from "@/sanity/sanity-functions";
 import "./ArticlePage.scss";
 import { PortableText } from "@portabletext/react";
 import Link from "next/link";
+export const revalidate = 0;
 const NewsPage = async ({
   params,
 }: {
