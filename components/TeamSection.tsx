@@ -129,11 +129,9 @@ const TeamSection: React.FC<Props> = ({ dictionary }) => {
               className="team__person"
             >
               <div className="team__person-image-div">
-                <Image
-                  height={300}
-                  width={300}
+                <img
+                  className="team__person-image"
                   alt="person"
-                  layout="responsive"
                   src={person.image}
                 />
               </div>
@@ -158,7 +156,7 @@ const TeamSection: React.FC<Props> = ({ dictionary }) => {
                   alt="close menu"
                   src={"/close.svg"}
                 />
-                <p>Close</p>
+                {/* <p>Close</p> */}
               </button>
             </div>
             <div className="modal__content-div">
