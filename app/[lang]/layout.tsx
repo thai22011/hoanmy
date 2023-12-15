@@ -31,6 +31,6 @@ export default function Root({
 }
 
 export const metadata = {
-  title: "Hoan My Construction",
-  description: "Building for today, for tomorrow, for everyone.",
+  title: "Hoàn Mỹ Construction",
+  description: "Một công trình chất lượng bắt đầu từ mối quan hệ chất lượng.",
 };
