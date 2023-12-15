@@ -52,6 +52,7 @@
       "heading2": "Accountants",
       "heading3": "Engineers"
     },
+
     "Members": {
       "bod": {
         "name1": "Mr.Nguyễn Tấn Đạt",
@@ -70,12 +71,12 @@
         "bio2": "Mrs.Nguyễn Thị Minh Tâm is a finance and accounting expert with a degree from the University of Economics HCMC (UEH). She specializes in accounts payable and accounts receivable, managing over $4M in transactions annually. She has a wealth of experience in administration, having worked at the Vinh Long People's Committee before joining Hoàn Mỹ as a senior treasurer. Mrs. Tam oversees the financial operations and ensures compliance with the regulations. Moreover, she is a dedicated and reliable professional who strives to deliver high-quality results and ensure customer satisfaction. She is an inspiring role model for young women who aspire to pursue a career in finance and accounting. Besides her work, Mrs. Tam is a loving mother of two children and enjoys collecting antiques, and traveling around the world."
       },
       "engineers": {
-        "name1": "",
-        "title1": "",
-        "bio1": "",
-        "name2": "",
-        "title2": "",
-        "bio2": ""
+        "name1": "John Doe",
+        "title1": "No title",
+        "bio1": " No bio",
+        "name2": "Jane DOe",
+        "title2": "No title",
+        "bio2": "No bio"
       }
     }
   },
@@ -90,11 +91,11 @@
     "client": "Client",
     "market": "Market",
     "completion": "Completion",
-    "budget": "Budget"
+    "budget": "Budget",
+    "view_all": "View all projects"
   },
   "NewsPage": {
-    "heading": "News",
-
+    "heading": "News"
   },
   "CompanyPage": {
     "Intro": {
