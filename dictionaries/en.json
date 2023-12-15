@@ -87,14 +87,15 @@
     "class3": "Commercial",
     "class4": "Military",
     "class5": "Waterway",
-    "class6": "Government"
-  },
-  "NewsPage": {
-    "heading": "News",
+    "class6": "Government",
     "client": "Client",
     "market": "Market",
     "completion": "Completion",
-    "budget": "Budget"
+    "budget": "Budget",
+    "view_all": "View all projects"
+  },
+  "NewsPage": {
+    "heading": "News"
   },
   "CompanyPage": {
     "Intro": {

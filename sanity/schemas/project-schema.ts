@@ -28,6 +28,11 @@ const project = {
             }
         },
         {
+            name: "budget",
+            title: "Budget",
+            type: "string" //$1,000,000 USD
+        },
+        {
             name: 'completed',
             title: 'Date Completed',
             type: 'date'

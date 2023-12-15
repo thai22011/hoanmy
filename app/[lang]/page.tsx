@@ -6,7 +6,10 @@ import Image from "next/image";
 import "./Home.scss";
 import Header from "@/components/Header";
 import NewsSection from "@/components/NewsSection";
-import { getNewsPreviews, getProjectPreviews } from "@/sanity/sanity-functions";
+import {
+  getNewsPreviewsHome,
+  getProjectPreviewsHome,
+} from "@/sanity/sanity-functions";
 import ProjectsCarousel from "@/components/ProjectsCarousel";
 import AboutUsSection from "@/components/AboutUsSection";
 import { ProjectPreview, NewsPreview } from "@/types";
@@ -18,9 +21,9 @@ export default async function IndexPage({
 }) {
   const dictionary = await getDictionary(lang);
 
-  const news = await getNewsPreviews(lang);
+  const news = await getNewsPreviewsHome(lang);
 
-  const projects = await getProjectPreviews(lang);
+  const projects = await getProjectPreviewsHome(lang);
 
   return (
     <>

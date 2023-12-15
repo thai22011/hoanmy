@@ -15,7 +15,7 @@ export default async function ProjectPage({
   console.log(projectSlug);
   const dictionary = await getDictionary(params.lang);
   const project = await getProject(projectSlug);
-  console.log(project);
+  // console.log(project);
 
   return (
     <>
@@ -30,19 +30,37 @@ export default async function ProjectPage({
           </div>
           <div className="project__categories">
             <div className="project__category">
-              <h4 className="project__category-type">Client</h4>
+              <h4 className="project__category-type">
+                {dictionary.ProjectsPage.client}
+              </h4>
               <h4 className="project__category-value">{project.client}</h4>
             </div>
             <div className="project__category">
-              <h4 className="project__category-type">Market</h4>
-              <h4 className="project__category-value">{project.market}</h4>
+              <h4 className="project__category-type">
+                {dictionary.ProjectsPage.market}
+              </h4>
+              <h4 className="project__category-value">
+                {project.market === "government"
+                  ? dictionary.ProjectsPage.class6
+                  : project.market === "commercial"
+                  ? dictionary.ProjectsPage.class3
+                  : project.market === "education"
+                  ? dictionary.ProjectsPage.class2
+                  : project.market === "military"
+                  ? dictionary.ProjectsPage.class4
+                  : dictionary.ProjectsPage.class5}
+              </h4>
             </div>
             <div className="project__category">
-              <h4 className="project__category-type">Completion</h4>
+              <h4 className="project__category-type">
+                {dictionary.ProjectsPage.completion}
+              </h4>
               <h4 className="project__category-value">{project.completed}</h4>
             </div>
             <div className="project__category">
-              <h4 className="project__category-type">Budget</h4>
+              <h4 className="project__category-type">
+                {dictionary.ProjectsPage.budget}
+              </h4>
               <h4 className="project__category-value">{project.budget}</h4>
             </div>
           </div>
@@ -79,7 +97,7 @@ export default async function ProjectPage({
 
           <div className="project__button-div">
             <Link className="project__button" href={`/${params.lang}/projects`}>
-              View all projects
+              {dictionary.ProjectsPage.view_all}
             </Link>
           </div>
         </div>

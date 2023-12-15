@@ -86,14 +86,15 @@
     "class3": "Dân dụng",
     "class4": "Quốc phòng",
     "class5": "Thủy Lợi",
-    "class6": "Chính Phủ"
-  },
-  "NewsPage": {
-    "heading": "News Viet",
+    "class6": "Chính Phủ",
     "client": "Khách Hàng",
     "market": "Thị Trường",
     "completion": "Hoàn Thành",
-    "budget": "Kinh Phí"
+    "budget": "Kinh Phí",
+    "view_all": "Xem thêm"
+  },
+  "NewsPage": {
+    "heading": "News Viet"
   },
   "CompanyPage": {
     "Intro": {

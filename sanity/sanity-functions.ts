@@ -11,7 +11,26 @@ import { Locale } from "@/i18n-config"
 export const getProjectPreviews = async (lang:Locale) => {
 
     return client.fetch(
-        groq`*[_type =='project' && language == $lang]{
+        groq`*[_type =='project' && language == $lang] | order(_createdAt desc)[0..2]{
+            _id,
+            _createdAt,
+            name,
+            "slug": slug.current,
+            "image":image.asset->url,
+            url,
+            content,
+            client,
+            market
+
+        }
+        
+        `, {lang}
+    )
+}
+export const getProjectPreviewsHome = async (lang:Locale) => {
+
+    return client.fetch(
+        groq`*[_type =='project' && language == $lang] | order(_createdAt desc){
             _id,
             _createdAt,
             name,
@@ -34,8 +53,9 @@ export const getNewsPreviews = async (lang:Locale) => {
 
     return client.fetch(
 
-        groq`*[_type == "news" && language == $lang] {
+        groq`*[_type == "news" && language == $lang]| order(_createdAt desc)  {
 _id,
+_createdAt,
 title,
 "image":image.asset->url,
 description,
@@ -46,7 +66,23 @@ language,
         }`,{lang}
     )
 }
+export const getNewsPreviewsHome = async (lang:Locale) => {
 
+    return client.fetch(
+
+        groq`*[_type == "news" && language == $lang]| order(_createdAt desc)[0..2]  {
+_id,
+_createdAt,
+title,
+"image":image.asset->url,
+description,
+language,
+"slug": slug.current
+
+
+        }`,{lang}
+    )
+}
 export const getArticle = async (slug: string) => {
     return client.fetch(
         groq`*[_type == "news" && slug.current == $slug][0] {
