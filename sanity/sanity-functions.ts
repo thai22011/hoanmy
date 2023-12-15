@@ -8,10 +8,10 @@ import { Locale } from "@/i18n-config"
        apiVersion: '2023-07-07',
     })
 
-export const getProjectPreviews = async (lang:Locale) => {
+export const getProjectPreviewsHome = async (lang:Locale) => {
 
     return client.fetch(
-        groq`*[_type =='project' && language == $lang] | order(_createdAt desc)[0..2]{
+        groq`*[_type =='project' && language == $lang][0..2]{
             _id,
             _createdAt,
             name,
@@ -27,10 +27,10 @@ export const getProjectPreviews = async (lang:Locale) => {
         `, {lang}
     )
 }
-export const getProjectPreviewsHome = async (lang:Locale) => {
+export const getProjectPreviews = async (lang:Locale) => {
 
     return client.fetch(
-        groq`*[_type =='project' && language == $lang] | order(_createdAt desc){
+        groq`*[_type =='project' && language == $lang] {
             _id,
             _createdAt,
             name,
@@ -53,7 +53,7 @@ export const getNewsPreviews = async (lang:Locale) => {
 
     return client.fetch(
 
-        groq`*[_type == "news" && language == $lang]| order(_createdAt desc)  {
+        groq`*[_type == "news" && language == $lang]  {
 _id,
 _createdAt,
 title,
@@ -70,7 +70,7 @@ export const getNewsPreviewsHome = async (lang:Locale) => {
 
     return client.fetch(
 
-        groq`*[_type == "news" && language == $lang]| order(_createdAt desc)[0..2]  {
+        groq`*[_type == "news" && language == $lang][0..2]  {
 _id,
 _createdAt,
 title,
