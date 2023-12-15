@@ -9,11 +9,11 @@
       "heading1": "Established in",
       "text1": "Over two decades of expertise with a proven track record in the industry",
       "heading2": "Total Employees",
-      "text2": "Trusted employees with more than 10+ years of service",
+      "text2": "Trusted employees with more than 20+ years of service",
       "heading3": "Employee-owned",
       "text3": "A stronger sense of ownership and dedication",
       "heading4": "Current Projects",
-      "text4": "A robus portfolio with projects in the public sector across Vietnam."
+      "text4": "A robust portfolio with projects in the public sector across Southern Vietnam."
     },
     "Work": {
       "heading": "Featured Work",
@@ -22,13 +22,13 @@
     },
     "AboutUs": {
       "title1": "Our Story",
-      "text1": "HOÀN MỸ means ‘PERFECT’ in Vietnamese. In the years since then, we’ve grown to be a multi-billion-dollar construction business guided by an unwavering commitment to quality, our clients, and our people. These foundations have seen us become one of the top private companies in Vietnam with a blue-chip client list and an award-winning portfolio of almost 150+ successfully completed buildings from early work packages to $5+ million projects.",
+      "text1": "HOÀN MỸ means ‘PERFECT’ in Vietnamese. In the years since then, we’ve grown to be a multi-billion-dollar construction business guided by an unwavering commitment to quality, our clients, and our people. These foundations have seen us become one of the top private companies in Vietnam with a blue-chip client list and an award-winning portfolio of almost 150+ completed buildings from early work packages to $5+ million projects.",
       "title2": "Our Financial Strength",
       "text2": "HOAN MY CONSTRUCTION provides financial surety for our clients and their financiers. We maintain a policy of profit reinvestment and working capital management to ensure our balance sheet remains commensurate with the size of our business. We have strong cash and liquid asset reserves and a blue-chip client base, which translates into consistent cash flow and profitability. Our audited financial statements are available on request.",
       "title3": "Our Client Commitment",
       "text3": "Quality construction is more than materials and craftsmanship. It stems from the quality of the relationship between client and contractor. At HOAN MY CONSTRUCTION, we're mindful of fostering a family-like atmosphere. We find projects come together much easier and the finished product is far superior when people collaborate and freely share ideas. We also think you try just that little bit harder to please your clients when they seem like family to you. Maybe that's why so many work with us again and again.",
       "title4": "Our Expertise",
-      "text4": "As we've grown and evolved into a general contractor, our commitment to exceptional quality has never wavered. Hoan My Construction Ltd. today ranks as one of the most highly-regarded construction management firms in the public, government and industrial markets. And while we're proud of our reputation for quality work, we're prouder still that first and foremost in everything we do is an unwavering commitment to client satisfaction.",
+      "text4": "As we've grown and evolved into a general contractor, our commitment to exceptional quality has never wavered. Hoàn Mỹ is now considered one of the largest construction contractors in Vinh Long. But what makes us proud is not only our reputation but also our commitment to ensure quality, adhere to the design, meet the schedule, and say no to corruption.",
       "heading": "About Us",
       "button": "Read More"
     },
@@ -37,8 +37,8 @@
       "view_all": "View All News"
     },
     "Community": {
-      "title": "We are committed to building brighter futures and serving the communities we live in.",
-      "text": "Here is a bunch of text that is going to get updated later. It's just whatever for now but later it will be something kind of long like this but not sure what it will be yet so just making random words and blah blah blah"
+      "title": "For the benefit of ten years, we must plant trees; for the benefit of a hundred years, we must cultivate people. - Hồ Chí Minh",
+      "text": "Hoàn Mỹ invests in training and improving the skills of its staff who want to advance further in the company. The better the staff’s skills are, the higher the product quality, the lower the risk, and the higher the profit. In addition, the company also allocates a part of its annual profit to fund charitable activities in the local and neighboring areas."
     }
   },
   "TeamPage": {
@@ -49,10 +49,9 @@
     },
     "Main": {
       "heading1": "Board of Directors",
-      "heading2": "Our Accountants",
-      "heading3": "Our Engineers"
+      "heading2": "Accountants",
+      "heading3": "Engineers"
     },
-
     "Members": {
       "bod": {
         "name1": "Mr.Nguyễn Tấn Đạt",
@@ -71,12 +70,12 @@
         "bio2": "Mrs.Nguyễn Thị Minh Tâm is a finance and accounting expert with a degree from the University of Economics HCMC (UEH). She specializes in accounts payable and accounts receivable, managing over $4M in transactions annually. She has a wealth of experience in administration, having worked at the Vinh Long People's Committee before joining Hoàn Mỹ as a senior treasurer. Mrs. Tam oversees the financial operations and ensures compliance with the regulations. Moreover, she is a dedicated and reliable professional who strives to deliver high-quality results and ensure customer satisfaction. She is an inspiring role model for young women who aspire to pursue a career in finance and accounting. Besides her work, Mrs. Tam is a loving mother of two children and enjoys collecting antiques, and traveling around the world."
       },
       "engineers": {
-        "name1": "John Doe",
-        "title1": "No title",
-        "bio1": " No bio",
-        "name2": "Jane DOe",
-        "title2": "No title",
-        "bio2": "No bio"
+        "name1": "",
+        "title1": "",
+        "bio1": "",
+        "name2": "",
+        "title2": "",
+        "bio2": ""
       }
     }
   },
@@ -86,8 +85,8 @@
     "class2": "Education",
     "class3": "Commercial",
     "class4": "Military",
-    "class5": "Waterway",
-    "class6": "Government",
+    "class5": "Water Infrastructure",
+    "class6": "Government"
     "client": "Client",
     "market": "Market",
     "completion": "Completion",
@@ -101,23 +100,23 @@
     "Intro": {
       "title": "About Us",
       "heading": "A force in Vietnam construction – guided by family values, trust and putting people first.",
-      "text": "The HOÀN MỸ means ‘PERFECT’ in Vietnamese. In the years since then, we’ve grown to be a multi-billion-dollar construction business guided by an unwavering commitment to quality, our clients, and our people. These foundations have seen us become one of the top private companies in Vietnam with a blue-chip client list and an award-winning portfolio of almost 4,000 successfully completed buildings from early work packages to $300+ million projects."
+      "text": "The HOÀN MỸ means ‘PERFECT’ in Vietnamese. In the years since then, we’ve grown to be a multi-billion-dollar construction business guided by an unwavering commitment to quality, our clients, and our people. These foundations have seen us become one of the top private companies in Vietnam in the Mekong Delta with a blue-chip client list and over 150 completed buildings from early work packages to $5+ million projects."
     },
     "Section1": {
       "heading": "Our Financial Strength",
       "subheading": "Financial security is one of the most critical elements to consider when appointing a construction partner.",
-      "text1": "HOAN MY CONSTRUCTION provides financial surety for our clients and their financiers. We maintain a policy of profit reinvestment and working capital management to ensure our balance sheet remains commensurate with the size of our business. HOAN MY CONSTRUCTION exceeds the financial requirements for licensing in each state and territory, for private and government projects.",
-      "text2": " We have strong cash and liquid asset reserves and a blue-chip client base, which translates into consistent cash flow and profitability. Our audited financial statements are available on request."
+      "text1": "Hoàn Mỹ provides financial surety for our clients and their financiers. We maintain a policy of profit reinvestment and working capital management to ensure our balance sheet remains commensurate with the size of our business. Hoàn Mỹ exceeds the financial requirements for licensing for private and government projects.",
+      "text2": "We have strong cash and liquid asset reserves and a blue-chip client base, which translates into consistent cash flow and profitability. Our audited financial statements are available on request."
     },
     "Section2": {
       "heading": "Our Client Commitment",
       "subheading": "Quality construction begins with a quality relationship.",
-      "text": "Quality construction is more than materials and craftsmanship. It stems from the quality of the relationship between client and contractor. At HOAN MY CONSTRUCTION, we're mindful of fostering a family-like atmosphere. We find projects come together much easier and the finished product is far superior when people collaborate and freely share ideas. We also think you try just that little bit harder to please your clients when they seem like family to you. Maybe that's why so many work with us again and again."
+      "text": "Quality construction is more than materials and craftsmanship. It stems from the quality of the relationship between client and contractor. At Hoàn Mỹ, we're mindful of fostering a family-like atmosphere. We find projects come together much easier and the finished product is far superior when people collaborate and freely share ideas. We also think you try just that little bit harder to please your clients when they seem like family to you. Maybe that's why so many work with us again and again."
     },
     "Section3": {
       "heading": "Our Expertise",
       "subheading": "A higher level of satisfaction inside and out.",
-      "text": "As you might expect of a company that began as a high-end interiors contractor, we pay strict attention to the smallest details. As we've grown and evolved into a general contractor, our commitment to exceptional quality has never wavered. Maman Corp. today ranks as one of the most highly-regarded construction management firms in the healthcare, retail, and commercial and industrial markets. And while we're proud of our reputation for quality work, we're prouder still that first and foremost in everything we do is an unwavering commitment to client satisfaction."
+      "text": "As we've grown and evolved into a general contractor, our commitment to exceptional quality has never wavered. Hoàn Mỹ is now considered one of the largest construction contractors in Vinh Long. But what makes us proud is not only our reputation but also our commitment to ensure quality, adhere to the design, meet the schedule, and say no to corruption."
     }
   },
 
