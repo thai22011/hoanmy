@@ -95,7 +95,8 @@
     "view_all": "View all projects"
   },
   "NewsPage": {
-    "heading": "News"
+    "heading": "News",
+    "view_all": "View All News"
   },
   "CompanyPage": {
     "Intro": {

@@ -11,7 +11,7 @@ import { Locale } from "@/i18n-config"
 export const getProjectPreviewsHome = async (lang:Locale) => {
 
     return client.fetch(
-        groq`*[_type =='project' && language == $lang][0..2]{
+        groq`*[_type =='project' && language == $lang] | order(completed desc)[0..2]{
             _id,
             _createdAt,
             name,
@@ -19,6 +19,7 @@ export const getProjectPreviewsHome = async (lang:Locale) => {
             "image":image.asset->url,
             url,
             content,
+            completed,
             client,
             market
 
@@ -30,7 +31,7 @@ export const getProjectPreviewsHome = async (lang:Locale) => {
 export const getProjectPreviews = async (lang:Locale) => {
 
     return client.fetch(
-        groq`*[_type =='project' && language == $lang] {
+        groq`*[_type =='project' && language == $lang]| order(completed desc) {
             _id,
             _createdAt,
             name,

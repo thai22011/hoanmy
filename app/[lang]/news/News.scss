@@ -74,6 +74,7 @@
     @include breakpoint(1000px) {
       width: 350px;
       height: 350px;
+      object-fit: cover;
     }
   }
 }

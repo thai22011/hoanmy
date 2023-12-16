@@ -34,7 +34,7 @@
     },
     "News": {
       "heading": "Tin Tức",
-      "view_all": "Xem tất cả tin tức"
+      "view_all": "Xem Thêm"
     },
     "Community": {
       "title": "Vì lợi ích 10 năm trồng cây, Vì lợi ích trăm năm trồng người. - Hồ Chí Minh",
@@ -94,7 +94,8 @@
     "view_all": "Xem thêm"
   },
   "NewsPage": {
-    "heading": "Tin Tức"
+    "heading": "Tin Tức",
+    "view_all": "Xem thêm"
   },
   "CompanyPage": {
     "Intro": {

@@ -57,7 +57,7 @@ const NewsPage = async ({
 
           <div className="article__button-div">
             <Link className="article__button" href={`/${params.lang}/news`}>
-              View all stories
+              {dictionary.NewsPage.view_all}
             </Link>
           </div>
         </div>
