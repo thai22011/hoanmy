@@ -84,7 +84,7 @@ const Footer: React.FC<Props> = async ({ locale }) => {
                 /> */}
               </div>
               <p className="footer__copy-text">
-                Copyright <span>&copy;</span> 2023 Hoan My Construction Ltd.
+                Copyright <span>&copy;</span> 2025 Hoan My Construction Ltd.
               </p>
               <p className="footer__copy-text">All rights reserved</p>
             </div>
@@ -162,8 +162,7 @@ const Footer: React.FC<Props> = async ({ locale }) => {
                   <p className="footer__link">+84 703.823.831</p>
                 </li>
                 <li className="footer__li">
-                  <a className="footer__link" href="mailto:369tta@gmail.com">
-                    369tta@gmail.com
+                  <a className="footer__link" href="mailto:hoanmycovn@gmail.com">
                   </a>
                 </li>
               </ul>
