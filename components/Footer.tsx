@@ -163,6 +163,7 @@ const Footer: React.FC<Props> = async ({ locale }) => {
                 </li>
                 <li className="footer__li">
                   <a className="footer__link" href="mailto:hoanmycovn@gmail.com">
+                                                          hoanmycovn@gmail.com
                   </a>
                 </li>
               </ul>
